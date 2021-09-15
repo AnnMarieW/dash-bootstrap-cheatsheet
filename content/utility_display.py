@@ -80,11 +80,21 @@ d_inline_block_preview = html.Div(
     [
         html.P("Change screen size to see responsive content"),
         html.Div("d-inline-block", className="d-inline-block border bg-light m-1"),
-        html.Div("d-sm-inline-block", className="d-sm-inline-block border bg-light m-1"),
-        html.Div("d-md-inline-block", className="d-md-inline-block border bg-light m-1"),
-        html.Div("d-lg-inline-block", className="d-lg-inline-block border bg-light m-1"),
-        html.Div("d-xl-inline-block", className="d-xl-inline-block border bg-light m-1"),
-        html.Div("d-xxl-inline-block", className="d-xxl-inline-block border bg-light m-1"),
+        html.Div(
+            "d-sm-inline-block", className="d-sm-inline-block border bg-light m-1"
+        ),
+        html.Div(
+            "d-md-inline-block", className="d-md-inline-block border bg-light m-1"
+        ),
+        html.Div(
+            "d-lg-inline-block", className="d-lg-inline-block border bg-light m-1"
+        ),
+        html.Div(
+            "d-xl-inline-block", className="d-xl-inline-block border bg-light m-1"
+        ),
+        html.Div(
+            "d-xxl-inline-block", className="d-xxl-inline-block border bg-light m-1"
+        ),
     ]
 )
 
@@ -113,7 +123,6 @@ d_block_preview = html.Div(
         html.Span("d-xxl-block", className="d-xxl-block border bg-light m-1"),
     ]
 )
-
 
 
 d_grid_code = """
@@ -189,7 +198,9 @@ d_inline_flex_preview = html.Div(
         html.Div("d-md-inline-flex", className="d-md-inline-flex border bg-light m-1"),
         html.Div("d-lg-inline-flex", className="d-lg-inline-flex border bg-light m-1"),
         html.Div("d-xl-inline-flex", className="d-xl-inline-flex border bg-light m-1"),
-        html.Div("d-xxl-inline-flex", className="d-xxl-inline-flex border bg-light m-1"),
+        html.Div(
+            "d-xxl-inline-flex", className="d-xxl-inline-flex border bg-light m-1"
+        ),
     ]
 )
 
@@ -213,11 +224,15 @@ d_print_display_preview = html.Div(
         html.P("Change screen size to see responsive content"),
         html.Div("d-print-none", className="d-print-none border bg-light m-1"),
         html.Div("d-print-inline", className="d-print-inline border bg-light m-1"),
-        html.Div("d-print-inline-block", className="d-print-inline-block border bg-light m-1"),
+        html.Div(
+            "d-print-inline-block", className="d-print-inline-block border bg-light m-1"
+        ),
         html.Div("d-print-block", className="d-print-block border bg-light m-1"),
         html.Div("d-print-grid", className="d-print-grid border bg-light m-1"),
         html.Div("d-print-flex", className="d-print-flex border bg-light m-1"),
-        html.Div("d-print-inline-flex", className="d-print-inline-flex border bg-light m-1"),
+        html.Div(
+            "d-print-inline-flex", className="d-print-inline-flex border bg-light m-1"
+        ),
     ]
 )
 

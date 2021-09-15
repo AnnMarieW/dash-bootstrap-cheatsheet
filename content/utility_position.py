@@ -80,7 +80,8 @@ direction_position_preview = html.Div(
         html.Div(className="position-absolute bottom-0 start-0 sm-square"),
         html.Div(className="position-absolute bottom-0 end-0 sm-square"),
     ],
-    className="position-relative border", style={"height":175}
+    className="position-relative border",
+    style={"height": 175},
 )
 
 
@@ -104,17 +105,36 @@ html.Div(
 
 translate_middle_preview = html.Div(
     [
-        html.Div(className="position-absolute top-0 start-0 translate-middle sm-square"),
-        html.Div(className="position-absolute top-0 start-50 translate-middle sm-square"),
-        html.Div(className="position-absolute top-0 start-100 translate-middle sm-square"),
-        html.Div(className="position-absolute top-50 start-0 translate-middle sm-square"),
-        html.Div(className="position-absolute top-50 start-50 translate-middle sm-square"),
-        html.Div(className="position-absolute top-50 start-100 translate-middle sm-square"),
-        html.Div(className="position-absolute top-100 start-0 translate-middle sm-square"),
-        html.Div(className="position-absolute top-100 start-50 translate-middle sm-square"),
-        html.Div(className="position-absolute top-100 start-100 translate-middle sm-square"),
+        html.Div(
+            className="position-absolute top-0 start-0 translate-middle sm-square"
+        ),
+        html.Div(
+            className="position-absolute top-0 start-50 translate-middle sm-square"
+        ),
+        html.Div(
+            className="position-absolute top-0 start-100 translate-middle sm-square"
+        ),
+        html.Div(
+            className="position-absolute top-50 start-0 translate-middle sm-square"
+        ),
+        html.Div(
+            className="position-absolute top-50 start-50 translate-middle sm-square"
+        ),
+        html.Div(
+            className="position-absolute top-50 start-100 translate-middle sm-square"
+        ),
+        html.Div(
+            className="position-absolute top-100 start-0 translate-middle sm-square"
+        ),
+        html.Div(
+            className="position-absolute top-100 start-50 translate-middle sm-square"
+        ),
+        html.Div(
+            className="position-absolute top-100 start-100 translate-middle sm-square"
+        ),
     ],
-    className="position-relative border", style={"height":175}
+    className="position-relative border",
+    style={"height": 175},
 )
 
 
@@ -139,16 +159,27 @@ html.Div(
 translate_middle_direction_preview = html.Div(
     [
         html.Div(className="position-absolute top-0 start-0 sm-square"),
-        html.Div(className="position-absolute top-0 start-50 translate-middle-x sm-square"),
+        html.Div(
+            className="position-absolute top-0 start-50 translate-middle-x sm-square"
+        ),
         html.Div(className="position-absolute top-0 end-0 sm-square"),
-        html.Div(className="position-absolute top-50 start-0 translate-middle-y sm-square"),
-        html.Div(className="position-absolute top-50 start-50 translate-middle sm-square"),
-        html.Div(className="position-absolute top-50 end-0 translate-middle-y sm-square"),
+        html.Div(
+            className="position-absolute top-50 start-0 translate-middle-y sm-square"
+        ),
+        html.Div(
+            className="position-absolute top-50 start-50 translate-middle sm-square"
+        ),
+        html.Div(
+            className="position-absolute top-50 end-0 translate-middle-y sm-square"
+        ),
         html.Div(className="position-absolute bottom-0 start-0 sm-square"),
-        html.Div(className="position-absolute bottom-0 start-50 translate-middle-x sm-square"),
+        html.Div(
+            className="position-absolute bottom-0 start-50 translate-middle-x sm-square"
+        ),
         html.Div(className="position-absolute bottom-0 end-0  sm-square"),
     ],
-    className="position-relative border", style={"height":175}
+    className="position-relative border",
+    style={"height": 175},
 )
 
 
@@ -170,8 +201,85 @@ align_preview = html.Div(
         html.Span("middle", className="align-middle"),
         html.Span("bottom", className="align-bottom"),
         html.Span("text-top", className="align-text-top"),
-        html.Span("text-bottom", className="align-text-bottom")
+        html.Span("text-bottom", className="align-text-bottom"),
     ]
+)
+
+vstack_code = """
+```
+See more on Stacks in the Bootstrap docs:
+https://getbootstrap.com/docs/5.1/helpers/stacks/
+
+vstack_preview = html.Div(
+    [
+        html.Div("First Item", className="bg-light border"),
+        html.Div("Second Item", className="bg-light border"),
+        html.Div("Third Item", className="bg-light border"),
+    ],
+    className="vstack gap-3",
+)
+
+```"""
+
+vstack_preview = html.Div(
+    [
+        html.Div("First Item", className="bg-light border"),
+        html.Div("Second Item", className="bg-light border"),
+        html.Div("Third Item", className="bg-light border"),
+    ],
+    className="vstack gap-3",
+)
+
+
+hstack_code = """
+```
+See more on Stacks in the Bootstrap docs:
+https://getbootstrap.com/docs/5.1/helpers/stacks/
+
+hstack_preview = html.Div(
+    [
+        html.Div("First Item", className="bg-light border"),
+        html.Div("Second Item", className="bg-light border"),
+        html.Div("Third Item", className="bg-light border"),
+    ],
+    className="hstack gap-3",
+)
+
+```"""
+
+hstack_preview = html.Div(
+    [
+        html.Div("First Item", className="bg-light border"),
+        html.Div("Second Item", className="bg-light border"),
+        html.Div("Third Item", className="bg-light border"),
+    ],
+    className="hstack gap-3",
+)
+
+
+vr_code = """
+```
+See more on Vertical Rule in Official Bootstrap docs:
+https://getbootstrap.com/docs/5.1/helpers/vertical-rule/
+
+vr_preview = html.Div(
+    [
+        html.Div("First Item", className="bg-light border"),
+        html.Div("Second Item", className="bg-light border"),
+        html.Div("Third Item", className="bg-light border"),
+    ],
+    className="vstack gap-3",
+)
+
+```"""
+
+vr_preview = html.Div(
+    [
+        html.Span("Second Item", className="bg-light border"),
+        html.Div(className="vr"),
+        html.Span("Third Item", className="bg-light border"),
+    ],
+    className="hstack gap-3",
 )
 
 
@@ -192,6 +300,9 @@ utility_position = dbc.Card(
                 make_listgroup_item("translate-middle"),
                 make_listgroup_item("translate-middle-{direction}"),
                 make_listgroup_item("align-{option}"),
+                make_listgroup_item("vstack"),
+                make_listgroup_item("hstack"),
+                make_listgroup_item("vr (vertical rule)"),
             ],
             flush=True,
             className="border-0",
@@ -199,5 +310,3 @@ utility_position = dbc.Card(
     ],
     className="class-card",
 )
-
-

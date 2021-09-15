@@ -28,17 +28,17 @@ examples = {
     "rounded": [border_rounded_code, border_rounded_preview],
     "rounded-{corner}": [border_rounded_corner_code, border_rounded_corner_preview],
     "rounded-{size}": [border_rounded_size_code, border_rounded_size_preview],
-
+    #
     # Utility color examples
     "text-{color}": [text_color_code, text_color_preview],
-    "text-body" : [text_body_code, text_body_preview],
-    "text-muted" : [text_muted_code, text_muted_preview],
-    "text-black-50":[text_black_50_code, text_black_50_preview],
+    "text-body": [text_body_code, text_body_preview],
+    "text-muted": [text_muted_code, text_muted_preview],
+    "text-black-50": [text_black_50_code, text_black_50_preview],
     "text-white-50": [text_white_50_code, text_white_50_preview],
     "bg-{color}": [bg_color_code, bg_color_preview],
     "bg-transparent": [bg_transparent_code, bg_transparent_preview],
     "bg-gradient": [bg_gradient_code, bg_gradient_preview],
-
+    #
     # Utility display examples
     "d-*-none": [d_none_code, d_none_preview],
     "d-*-inline": [d_inline_code, d_inline_preview],
@@ -48,7 +48,7 @@ examples = {
     "d-*-flex": [d_flex_code, d_flex_preview],
     "d-*-inline-flex": [d_inline_flex_code, d_inline_flex_preview],
     "d-print-{display}": [d_print_display_code, d_print_display_preview],
-
+    #
     # Utility Spacing examples
     "m-*-{option}": [m_code, m_preview],
     "mt-*-{option}": [mt_code, mt_preview],
@@ -65,20 +65,26 @@ examples = {
     "px-*-{option}": [px_code, px_preview],
     "py-*-{option}": [py_code, py_preview],
     "gap-*-{size}": [gap_code, gap_preview],
-
+    #
     # Utility opacity examples
     "text-opacity-{value}": [text_opacity_code, text_opacity_preview],
     "bg-opacity-{value}": [bg_opacity_code, bg_opacity_preview],
     "opacity-{value}": [opacity_code, opacity_preview],
-
+    #
     # Utility position examples
     "float-*-{option}": [float_code, float_preview],
     "position-{option}": [position_code, position_preview],
     "{direction}-{position}": [direction_position_code, direction_position_preview],
     "translate-middle": [translate_middle_code, translate_middle_preview],
-    "translate-middle-{direction}": [translate_middle_direction_code, translate_middle_direction_preview],
-    "align-{option}":[align_code, align_preview],
-
+    "translate-middle-{direction}": [
+        translate_middle_direction_code,
+        translate_middle_direction_preview,
+    ],
+    "align-{option}": [align_code, align_preview],
+    "vstack": [vstack_code, vstack_preview],
+    "hstack": [hstack_code, hstack_preview],
+    "vr (vertical rule)": [vr_code, vr_preview],
+    #
     # Utility text examples
     "text-*-start": [text_start_code, text_start_preview],
     "text-*-center": [text_center_code, text_center_preview],
@@ -94,8 +100,8 @@ examples = {
     "font-monospace": [font_monospace_code, font_monospace_preview],
     "text-reset": [text_reset_code, text_reset_preview],
     "text-decoration-{option}": [text_decoration_code, text_decoration_preview],
-
-    #Utility misc examples
+    #
+    # Utility misc examples
     "user-select-{option}": [user_select_code, user_select_preview],
     "pe-{option} (pointer)": [pointer_code, pointer_preview],
     "overflow-option": [overflow_code, overflow_preview],
@@ -106,7 +112,7 @@ examples = {
     "mh-100": [mh_100_code, mh_100_preview],
     "viewport": [viewport_code, viewport_preview],
     "visible/invisible": [visible_code, visible_preview],
-
+    #
     # Utility flex examples
     "flex-*-row": [flex_row_code, flex_row_preview],
     "flex-*-row-reverse": [flex_row_reverse_code, flex_row_reverse_preview],
@@ -124,13 +130,12 @@ examples = {
     "order-*-{order-number}": [order_number_code, order_number_preview],
     "order-*-{order-name}": [order_name_code, order_name_preview],
     "align-content-*-{option}": [align_content_code, align_content_preview],
-
-    #Utilites Grid examples
+    #
+    # Utilites Grid examples
     "gx-{size}": [gx_size_code, gx_size_preview],
     "gx-*-{size}": [gx_dev_size_code, gx_dev_size_preview],
     "gy-{size}": [gy_size_code, gy_size_preview],
     "gy-*-{size}": [gy_dev_size_code, gy_dev_size_preview],
     "g-{size}": [g_size_code, g_size_preview],
-    "g-*-{size}": [g_dev_size_code,  g_dev_size_preview],
-
+    "g-*-{size}": [g_dev_size_code, g_dev_size_preview],
 }

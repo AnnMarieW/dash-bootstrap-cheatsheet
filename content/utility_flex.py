@@ -258,7 +258,9 @@ def make_flex_align_items(className):
     return html.Div(
         [
             html.Div("Flex item", className="p-2 bg-secondary border"),
-            html.Div("Aligned Flex item", className=className + " p2 bg-secondary border"),
+            html.Div(
+                "Aligned Flex item", className=className + " p2 bg-secondary border"
+            ),
             html.Div("Flex item", className="p-2 bg-secondary border"),
         ],
         className="d-flex bg-light border mb-2",
@@ -494,7 +496,7 @@ html.Div(
     ]
 )
 ```"""
-align_content_preview= html.Div(
+align_content_preview = html.Div(
     [
         html.Div(
             [html.Div("Flex item", className="p-2 bg-secondary")] * 15,
@@ -550,7 +552,7 @@ utility_flex = dbc.Card(
                 make_listgroup_item("flex-*-wrap-reverse"),
                 make_listgroup_item("order-*-{order-number}"),
                 make_listgroup_item("order-*-{order-name}"),
-                make_listgroup_item("align-content-*-{option}")
+                make_listgroup_item("align-content-*-{option}"),
             ],
             flush=True,
             className="border-0",

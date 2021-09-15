@@ -25,11 +25,26 @@ html.P("Start aligned text on all viewport sized extra extra large", className="
 text_start_preview = html.Div(
     [
         html.P("Start aligned text on all viewport sizes", className="text-start"),
-        html.P("Start aligned text on all viewport sized small or wider", className="text-sm-start"),
-        html.P("Start aligned text on all viewport sized medium or wider", className="text-md-start"),
-        html.P("Start aligned text on all viewport sized large or wider", className="text-lg-start"),
-        html.P("Start aligned text on all viewport sized extra large or wider", className="text-xl-start"),
-        html.P("Start aligned text on all viewport sized extra extra large", className="text-xxl-start"),
+        html.P(
+            "Start aligned text on all viewport sized small or wider",
+            className="text-sm-start",
+        ),
+        html.P(
+            "Start aligned text on all viewport sized medium or wider",
+            className="text-md-start",
+        ),
+        html.P(
+            "Start aligned text on all viewport sized large or wider",
+            className="text-lg-start",
+        ),
+        html.P(
+            "Start aligned text on all viewport sized extra large or wider",
+            className="text-xl-start",
+        ),
+        html.P(
+            "Start aligned text on all viewport sized extra extra large",
+            className="text-xxl-start",
+        ),
     ]
 )
 
@@ -51,11 +66,26 @@ html.P("Center aligned text on all viewport sized extra extra large", className=
 text_center_preview = html.Div(
     [
         html.P("Center aligned text on all viewport sizes", className="text-center"),
-        html.P("Center aligned text on all viewport sized small or wider", className="text-sm-center"),
-        html.P("Center aligned text on all viewport sized medium or wider", className="text-md-center"),
-        html.P("Center aligned text on all viewport sized large or wider", className="text-lg-center"),
-        html.P("Center aligned text on all viewport sized extra large or wider", className="text-xl-center"),
-        html.P("Center aligned text on all viewport sized extra extra large", className="text-xxl-center"),
+        html.P(
+            "Center aligned text on all viewport sized small or wider",
+            className="text-sm-center",
+        ),
+        html.P(
+            "Center aligned text on all viewport sized medium or wider",
+            className="text-md-center",
+        ),
+        html.P(
+            "Center aligned text on all viewport sized large or wider",
+            className="text-lg-center",
+        ),
+        html.P(
+            "Center aligned text on all viewport sized extra large or wider",
+            className="text-xl-center",
+        ),
+        html.P(
+            "Center aligned text on all viewport sized extra extra large",
+            className="text-xxl-center",
+        ),
     ]
 )
 
@@ -77,11 +107,26 @@ html.P("End aligned text on all viewport sized extra extra large", className="te
 text_end_preview = html.Div(
     [
         html.P("End aligned text on all viewport sizes", className="text-end"),
-        html.P("End aligned text on all viewport sized small or wider", className="text-sm-end"),
-        html.P("End aligned text on all viewport sized medium or wider", className="text-md-end"),
-        html.P("End aligned text on all viewport sized large or wider", className="text-lg-end"),
-        html.P("End aligned text on all viewport sized extra large or wider", className="text-xl-end"),
-        html.P("End aligned text on all viewport sized extra extra large", className="text-xxl-end"),
+        html.P(
+            "End aligned text on all viewport sized small or wider",
+            className="text-sm-end",
+        ),
+        html.P(
+            "End aligned text on all viewport sized medium or wider",
+            className="text-md-end",
+        ),
+        html.P(
+            "End aligned text on all viewport sized large or wider",
+            className="text-lg-end",
+        ),
+        html.P(
+            "End aligned text on all viewport sized extra large or wider",
+            className="text-xl-end",
+        ),
+        html.P(
+            "End aligned text on all viewport sized extra extra large",
+            className="text-xxl-end",
+        ),
     ]
 )
 
@@ -90,7 +135,9 @@ text_wrap_code = """
 dbc.Badge("This text should wrap", className="text-wrap", style={"width":75})
 ```"""
 
-text_wrap_preview = dbc.Container(dbc.Badge("This text should wrap", className="text-wrap", style={"width":75}))
+text_wrap_preview = dbc.Container(
+    dbc.Badge("This text should wrap", className="text-wrap", style={"width": 75})
+)
 
 
 text_nowrap_code = """
@@ -98,7 +145,9 @@ text_nowrap_code = """
 dbc.Badge("This text does not wrap", className="text-nowrap", style={"width":50})
 ```"""
 
-text_nowrap_preview = dbc.Container(dbc.Badge("This text does not wrap", className="text-nowrap", style={"width":50}))
+text_nowrap_preview = dbc.Container(
+    dbc.Badge("This text does not wrap", className="text-nowrap", style={"width": 50})
+)
 
 text_break_code = """
 ```
@@ -106,7 +155,10 @@ html.P(className="text-break", children="mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
 ```"""
 
 text_break_preview = dbc.Container(
-html.P(className="text-break", children="mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm")
+    html.P(
+        className="text-break",
+        children="mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm",
+    )
 )
 
 text_option_code = """
@@ -157,10 +209,15 @@ html.P("Lighter weight text (relative to the parent container)", className="fw-l
 fw_weight_preview = html.Div(
     [
         html.P("Bold text", className="fw-bold"),
-        html.P("Bolder weight text (relative to the parent element)", className="fw-bolder"),
+        html.P(
+            "Bolder weight text (relative to the parent element)", className="fw-bolder"
+        ),
         html.P("Normal weight text"),
         html.P("Light weight text", className="fw-light"),
-        html.P("Lighter weight text (relative to the parent container)", className="fw-lighter"),
+        html.P(
+            "Lighter weight text (relative to the parent container)",
+            className="fw-lighter",
+        ),
     ]
 )
 
@@ -173,7 +230,7 @@ html.P("Text with normal font style", className="fst-normal")
 fst_style_preview = html.Div(
     [
         html.P("Italic text", className="fst-italic"),
-        html.P("Text with normal font style", className="fst-normal")
+        html.P("Text with normal font style", className="fst-normal"),
     ]
 )
 
@@ -193,7 +250,7 @@ lh_style_preview = html.Div(
         html.P(lorem_text, className="lh-1"),
         html.P(lorem_text, className="lh-sm"),
         html.P(lorem_text, className="lh-base"),
-        html.P(lorem_text, className="lh-lg")
+        html.P(lorem_text, className="lh-lg"),
     ]
 )
 
@@ -215,11 +272,8 @@ html.P(
 )
 ```"""
 text_reset_preview = html.P(
-    [
-        "Muted text with a ",
-        html.A("reset link", href="#", className="text-reset")
-    ],
-    className="text-muted"
+    ["Muted text with a ", html.A("reset link", href="#", className="text-reset")],
+    className="text-muted",
 )
 
 text_decoration_code = """
@@ -231,9 +285,18 @@ html.A("This link has text decoration removed",  href="#",className="text-decora
 
 text_decoration_preview = html.Div(
     [
-        html.P("This text has a line underneath it", className="text-decoration-underline"),
-        html.P("This text has a line going through it", className="text-decoration-line-through"),
-        html.A("This link has text decoration removed",  href="#",className="text-decoration-none"),
+        html.P(
+            "This text has a line underneath it", className="text-decoration-underline"
+        ),
+        html.P(
+            "This text has a line going through it",
+            className="text-decoration-line-through",
+        ),
+        html.A(
+            "This link has text decoration removed",
+            href="#",
+            className="text-decoration-none",
+        ),
     ]
 )
 
@@ -261,7 +324,7 @@ utility_text = dbc.Card(
                 make_listgroup_item("lh-{style}"),
                 make_listgroup_item("font-monospace"),
                 make_listgroup_item("text-reset"),
-                make_listgroup_item("text-decoration-{option}")
+                make_listgroup_item("text-decoration-{option}"),
             ],
             flush=True,
             className="border-0",
@@ -269,5 +332,3 @@ utility_text = dbc.Card(
     ],
     className="class-card",
 )
-
-

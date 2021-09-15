@@ -34,7 +34,7 @@ text_color_preview = html.Div(
         html.P("text-white", className="text-white bg-dark"),
         html.P("text-black", className="text-black"),
         html.P("text-body", className="text-body"),
-        html.P("text-muted", className="text-muted")
+        html.P("text-muted", className="text-muted"),
     ]
 )
 
@@ -44,11 +44,7 @@ html.P("text-body", className="text-body")
 ```"""
 
 
-text_body_preview = html.Div(
-    [
-        html.P("text-body", className="text-body"),
-    ]
-)
+text_body_preview = html.Div([html.P("text-body", className="text-body"),])
 
 text_muted_code = """
 ```
@@ -58,12 +54,8 @@ html.P("default text color")
 
 
 text_muted_preview = html.Div(
-    [
-        html.P("text-muted", className="text-muted"),
-        html.P("default text color")
-    ]
+    [html.P("text-muted", className="text-muted"), html.P("default text color")]
 )
-
 
 
 text_white_50_code = """
@@ -110,7 +102,6 @@ bg_color_preview = html.Div(
 )
 
 
-
 text_black_50_code = """
 ```
 Note: Deprecated use "opacity-*" instead
@@ -134,9 +125,7 @@ html.P("bg-transparent", className="bg-transparent")
 
 
 bg_transparent_preview = html.Div(
-    [
-        html.P("bg-transparent", className="bg-transparent"),
-    ]
+    [html.P("bg-transparent", className="bg-transparent"),]
 )
 
 
@@ -152,7 +141,6 @@ bg_gradient_preview = html.Div(
         html.P("bg-primary bg-gradient", className="bg-primary bg-gradient"),
     ]
 )
-
 
 
 utility_color = dbc.Card(
@@ -181,4 +169,3 @@ utility_color = dbc.Card(
     ],
     className="class-card",
 )
-

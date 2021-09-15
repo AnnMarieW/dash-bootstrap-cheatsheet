@@ -189,10 +189,10 @@ gx_dev_size_preview = dbc.Container(
                 dbc.Col(html.Div("col1", className="border bg-light")),
                 dbc.Col(html.Div("col2", className=" border bg-light")),
             ],
-            className="gx-2 gx-xl-5 m-2 border border-danger"
+            className="gx-2 gx-xl-5 m-2 border border-danger",
         ),
     ],
-    fluid=True
+    fluid=True,
 )
 
 
@@ -224,10 +224,10 @@ gy_dev_size_preview = dbc.Container(
                 dbc.Col(html.Div("col1", className="border bg-light")),
                 dbc.Col(html.Div("col2", className=" border bg-light")),
             ],
-            className="gy-2 gy-xl-5 m-2 border border-danger"
+            className="gy-2 gy-xl-5 m-2 border border-danger",
         ),
     ],
-    fluid=True
+    fluid=True,
 )
 
 
@@ -259,10 +259,10 @@ g_dev_size_preview = dbc.Container(
                 dbc.Col(html.Div("col1", className="border bg-light")),
                 dbc.Col(html.Div("col2", className=" border bg-light")),
             ],
-            className="g-2 g-xl-5 m-2 border border-danger"
+            className="g-2 g-xl-5 m-2 border border-danger",
         ),
     ],
-    fluid=True
+    fluid=True,
 )
 
 

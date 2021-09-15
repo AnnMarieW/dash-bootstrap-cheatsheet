@@ -25,24 +25,26 @@ from content.utility_text import utility_text
 from content.utility_misc import utility_misc
 from content.utility_flex import utility_flex
 from content.utility_grid import utility_grid
-from content.dbc_components import dbc_components
+from content.dbc_components import dbc_components1, dbc_components2
+from content.plotly_components import plotly_links
 
-app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP, dbc.icons.BOOTSTRAP])
+app = Dash(__name__, external_stylesheets=[dbc.themes.SPACELAB, dbc.icons.BOOTSTRAP])
 
 header = html.Div(
     dbc.Container(
         [
-            html.H1("Dash Bootstrap 5 Cheatsheet", className="display-3"),
+            html.H1("Dash Bootstrap 5 Cheatsheet", className="display-3 text-white", ),
             html.P(
                 "A guide for using Bootstrap 5 Utility classes in Dash Bootstrap Components V1",
                 className="fst-italic lead",
             ),
+            dbc.Button("Highlight New", id="new", n_clicks=0, color="secondary", className="position-absolute bottom-0 start-0 p-3")
         ],
         fluid=True,
         className="py-3",
     ),
-    className="p-3 bg-primary text-light rounded-3 mb-4",
-    style={"height":400}
+    className="p-3 bg-primary text-light rounded-3 mb-4  position-relative",
+    style={"height": 400},
 )
 
 
@@ -67,7 +69,9 @@ app.layout = dbc.Container(
                 dbc.Col(utility_spacing),
                 dbc.Col(utility_text),
                 dbc.Col(utility_flex),
-                dbc.Col(dbc_components)
+                dbc.Col(dbc_components1),
+                dbc.Col(dbc_components2),
+                dbc.Col(plotly_links),
             ]
         ),
     ],

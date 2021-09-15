@@ -154,7 +154,7 @@ overflow_preview = html.Div(
             style={"maxWidth": 260, "maxHeight": 100},
         ),
     ],
-    className="d-sm-flex d-md-block d-xxl-flex"
+    className="d-sm-flex d-md-block d-xxl-flex",
 )
 
 
@@ -193,12 +193,34 @@ html.Div(
 
 h_option_preview = html.Div(
     [
-        html.Div("Height 25%", className="h-25 d-inline-block bg-light border", style={"width":120}),
-        html.Div("Height 50%", className="h-50 d-inline-block bg-light border", style={"width":120}),
-        html.Div("Height 75%", className="h-75 d-inline-block bg-light border", style={"width":120}),
-        html.Div("Height 100%", className="h-100 d-inline-block bg-light border", style={"width":120}),
-        html.Div("Height auto", className="h-auto d-inline-block bg-light border", style={"width":120}),
-    ],className="border", style={"height":100}
+        html.Div(
+            "Height 25%",
+            className="h-25 d-inline-block bg-light border",
+            style={"width": 120},
+        ),
+        html.Div(
+            "Height 50%",
+            className="h-50 d-inline-block bg-light border",
+            style={"width": 120},
+        ),
+        html.Div(
+            "Height 75%",
+            className="h-75 d-inline-block bg-light border",
+            style={"width": 120},
+        ),
+        html.Div(
+            "Height 100%",
+            className="h-100 d-inline-block bg-light border",
+            style={"width": 120},
+        ),
+        html.Div(
+            "Height auto",
+            className="h-auto d-inline-block bg-light border",
+            style={"width": 120},
+        ),
+    ],
+    className="border",
+    style={"height": 100},
 )
 
 

@@ -20,10 +20,19 @@ html.Div("25%", className="opacity-25 p-2 m-1 bg-primary text-light fw-bold roun
 
 opacity_preview = html.Div(
     [
-        html.Div("100%", className="opacity-100 p-2 m-1 bg-primary text-light fw-bold rounded"),
-        html.Div("75%", className="opacity-75 p-2 m-1 bg-primary text-light fw-bold rounded"),
-        html.Div("50%", className="opacity-50 p-2 m-1 bg-primary text-light fw-bold rounded"),
-        html.Div("25%", className="opacity-25 p-2 m-1 bg-primary text-light fw-bold rounded"),
+        html.Div(
+            "100%",
+            className="opacity-100 p-2 m-1 bg-primary text-light fw-bold rounded",
+        ),
+        html.Div(
+            "75%", className="opacity-75 p-2 m-1 bg-primary text-light fw-bold rounded"
+        ),
+        html.Div(
+            "50%", className="opacity-50 p-2 m-1 bg-primary text-light fw-bold rounded"
+        ),
+        html.Div(
+            "25%", className="opacity-25 p-2 m-1 bg-primary text-light fw-bold rounded"
+        ),
     ]
 )
 
@@ -40,10 +49,22 @@ html.Div("25%", className="opacity-25 p-2 m-1 bg-primary text-light fw-bold roun
 bg_opacity_preview = html.Div(
     [
         html.Div("default", className="p-2 m-1 bg-primary text-light fw-bold rounded"),
-        html.Div("75%", className="bg_opacity-75 p-2 m-1 bg-primary text-light fw-bold rounded"),
-        html.Div("50%", className="bg_opacity-50 p-2 m-1 bg-primary text-dark fw-bold rounded"),
-        html.Div("25%", className="bg_opacity-25 p-2 m-1 bg-primary text-dark fw-bold rounded"),
-        html.Div("10%", className="bg_opacity-10 p-2 m-1 bg-primary text-dark fw-bold rounded"),
+        html.Div(
+            "75%",
+            className="bg_opacity-75 p-2 m-1 bg-primary text-light fw-bold rounded",
+        ),
+        html.Div(
+            "50%",
+            className="bg_opacity-50 p-2 m-1 bg-primary text-dark fw-bold rounded",
+        ),
+        html.Div(
+            "25%",
+            className="bg_opacity-25 p-2 m-1 bg-primary text-dark fw-bold rounded",
+        ),
+        html.Div(
+            "10%",
+            className="bg_opacity-10 p-2 m-1 bg-primary text-dark fw-bold rounded",
+        ),
     ]
 )
 
@@ -87,5 +108,3 @@ utility_opacity = dbc.Card(
     ],
     className="class-card",
 )
-
-

@@ -40,7 +40,8 @@ m_preview = html.Div(
         html.Div("m-4", className="m-4 bg-light border"),
         html.Div("m-5", className="m-5 bg-light border"),
         html.Div("m-auto", className="m-auto bg-light border"),
-    ], className="d-flex flex-wrap align-items-start"
+    ],
+    className="d-flex flex-wrap align-items-start",
 )
 
 
@@ -73,7 +74,8 @@ mt_preview = html.Div(
         html.Div("mt-4", className="mt-4 bg-light border"),
         html.Div("mt-5", className="mt-5 bg-light border"),
         html.Div("mt-auto", className="mt-auto bg-light border"),
-    ], className="d-flex flex-wrap align-items-start"
+    ],
+    className="d-flex flex-wrap align-items-start",
 )
 
 
@@ -106,7 +108,8 @@ me_preview = html.Div(
         html.Div("me-4", className="me-4 bg-light border"),
         html.Div("me-5", className="me-5 bg-light border"),
         html.Div("me-auto", className="me-auto bg-light border"),
-    ], className="d-flex flex-wrap align-items-start"
+    ],
+    className="d-flex flex-wrap align-items-start",
 )
 
 
@@ -172,7 +175,8 @@ ms_preview = html.Div(
         html.Div("ms-4", className="ms-4 bg-light border"),
         html.Div("ms-5", className="ms-5 bg-light border"),
         html.Div("ms-auto", className="ms-auto bg-light border"),
-    ], className="d-flex flex-wrap align-items-start"
+    ],
+    className="d-flex flex-wrap align-items-start",
 )
 
 
@@ -205,7 +209,8 @@ mx_preview = html.Div(
         html.Div("mx-4", className="mx-4 bg-light border"),
         html.Div("mx-5", className="mx-5 bg-light border"),
         html.Div("mx-auto", className="mx-auto bg-light border"),
-    ], className="d-flex flex-wrap align-items-start"
+    ],
+    className="d-flex flex-wrap align-items-start",
 )
 
 
@@ -238,7 +243,8 @@ my_preview = html.Div(
         html.Div("my-4", className="my-4 bg-light border"),
         html.Div("my-5", className="my-5 bg-light border"),
         html.Div("my-auto", className="my-auto bg-light border"),
-    ], className="d-flex flex-wrap align-items-start"
+    ],
+    className="d-flex flex-wrap align-items-start",
 )
 
 
@@ -271,7 +277,8 @@ p_preview = html.Div(
         html.Div("p-4", className="p-4 bg-light border"),
         html.Div("p-5", className="p-5 bg-light border"),
         html.Div("p-auto", className="p-auto bg-light border"),
-    ], className="d-flex flex-wrap align-items-start"
+    ],
+    className="d-flex flex-wrap align-items-start",
 )
 
 
@@ -304,7 +311,8 @@ pt_preview = html.Div(
         html.Div("pt-4", className="pt-4 bg-light border"),
         html.Div("pt-5", className="pt-5 bg-light border"),
         html.Div("pt-auto", className="pt-auto bg-light border"),
-    ], className="d-flex flex-wrap align-items-start"
+    ],
+    className="d-flex flex-wrap align-items-start",
 )
 
 
@@ -337,7 +345,8 @@ pe_preview = html.Div(
         html.Div("pe-4", className="pe-4 bg-light border"),
         html.Div("pe-5", className="pe-5 bg-light border"),
         html.Div("pe-auto", className="pe-auto bg-light border"),
-    ], className="d-flex flex-wrap align-items-start"
+    ],
+    className="d-flex flex-wrap align-items-start",
 )
 
 
@@ -403,7 +412,8 @@ ps_preview = html.Div(
         html.Div("ps-4", className="ps-4 bg-light border"),
         html.Div("ps-5", className="ps-5 bg-light border"),
         html.Div("ps-auto", className="ps-auto bg-light border"),
-    ], className="d-flex flex-wrap align-items-start"
+    ],
+    className="d-flex flex-wrap align-items-start",
 )
 
 
@@ -436,7 +446,8 @@ px_preview = html.Div(
         html.Div("px-4", className="px-4 bg-light border"),
         html.Div("px-5", className="px-5 bg-light border"),
         html.Div("px-auto", className="px-auto bg-light border"),
-    ], className="d-flex flex-wrap align-items-start"
+    ],
+    className="d-flex flex-wrap align-items-start",
 )
 
 
@@ -469,7 +480,8 @@ py_preview = html.Div(
         html.Div("py-4", className="py-4 bg-light border"),
         html.Div("py-5", className="py-5 bg-light border"),
         html.Div("py-auto", className="py-auto bg-light border"),
-    ], className="d-flex flex-wrap align-items-start"
+    ],
+    className="d-flex flex-wrap align-items-start",
 )
 
 
@@ -495,8 +507,8 @@ gap_preview = html.Div(
         html.Div("Grid item 1", className="p-2 bg-light border"),
         html.Div("Grid item 2", className="p-2 bg-light border"),
         html.Div("Grid item 3", className="p-2 bg-light border"),
-
-    ], className="d-grid gap-3"
+    ],
+    className="d-grid gap-3",
 )
 
 utility_spacing = dbc.Card(

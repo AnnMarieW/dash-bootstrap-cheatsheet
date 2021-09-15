@@ -17,7 +17,6 @@ html.Span(className="border")
 border_preview = html.Div(html.Span(className="border"), className="border-utils")
 
 
-
 border_direction_code = """
 ```python
 html.Span(className="border-top")
@@ -88,7 +87,7 @@ border_color_preview = html.Div(
         html.Span(className="border border-dark"),
         html.Span(className="border border-white"),
     ],
-    className="border-utils"
+    className="border-utils",
 )
 
 border_size_code = """
@@ -107,22 +106,19 @@ border_size_preview = html.Div(
         html.Span(className="border border-4"),
         html.Span(className="border border-5"),
     ],
-    className="border-utils"
+    className="border-utils",
 )
 
-border_rounded_code="""
+border_rounded_code = """
 ```
 html.Span(className="border rounded")
 ```"""
 border_rounded_preview = html.Div(
-    [
-        html.Span(className="border rounded"),
-    ],
-    className="border-utils"
+    [html.Span(className="border rounded"),], className="border-utils"
 )
 
 
-border_rounded_corner_code="""
+border_rounded_corner_code = """
 ```
 html.Span(className="border rounded-top")
 html.Span(className="border rounded-end")
@@ -140,11 +136,11 @@ border_rounded_corner_preview = html.Div(
         html.Span(className="border rounded-circle"),
         html.Span(className="pill border rounded-pill"),
     ],
-    className="border-utils"
+    className="border-utils",
 )
 
 
-border_rounded_size_code="""
+border_rounded_size_code = """
 ```
 html.Span(className="border rounded-0")
 html.Span(className="border rounded-1")
@@ -158,7 +154,7 @@ border_rounded_size_preview = html.Div(
         html.Span(className="border rounded-2"),
         html.Span(className="border rounded-3"),
     ],
-    className="border-utils"
+    className="border-utils",
 )
 
 

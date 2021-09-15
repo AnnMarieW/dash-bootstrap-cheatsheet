@@ -5,7 +5,7 @@ from dash import html, dcc
 import dash_bootstrap_components as dbc
 
 dbc_home_url = "https://dbc-v1.herokuapp.com/"
-dbc_url = "https://dbc-v1.herokuapp.com/docs/components"
+dbc_url = "https://dbc-v1.herokuapp.com/docs/components/"
 
 
 def make_offcanvas(idx):
@@ -84,7 +84,7 @@ def make_listgroup_item(idx):
 
 
 def make_listgroup_link(title, url):
-    return (dbc.ListGroupItem(title, href=url, target="_blank", className="border-0",),)
+    return dbc.ListGroupItem(title, href=url, target="_blank", className="border-0")
 
 
 def make_link(url):
@@ -97,7 +97,7 @@ def make_link(url):
                 className="bi bi-box-arrow-up-right h4",
                 href=url,
                 target="blank",
-                title="Offical Documentation",
+                title="Official Documentation",
             )
         ]
     )
