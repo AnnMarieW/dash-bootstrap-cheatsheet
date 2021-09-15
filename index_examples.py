@@ -104,7 +104,7 @@ examples = {
     # Utility misc examples
     "user-select-{option}": [user_select_code, user_select_preview],
     "pe-{option} (pointer)": [pointer_code, pointer_preview],
-    "overflow-option": [overflow_code, overflow_preview],
+    "overflow-{option}": [overflow_code, overflow_preview],
     "shadow/shadow-{option}": [shadow_code, shadow_preview],
     "w-{option}": [w_option_code, w_option_preview],
     "h-{option}": [h_option_code, h_option_preview],

@@ -305,7 +305,7 @@ utility_misc = dbc.Card(
             [
                 make_listgroup_item("user-select-{option}"),
                 make_listgroup_item("pe-{option} (pointer)"),
-                make_listgroup_item("overflow-option"),
+                make_listgroup_item("overflow-{option}"),
                 make_listgroup_item("shadow/shadow-{option}"),
                 make_listgroup_item("w-{option}"),
                 make_listgroup_item("h-{option}"),

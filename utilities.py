@@ -8,6 +8,41 @@ dbc_home_url = "https://dbc-v1.herokuapp.com/"
 dbc_url = "https://dbc-v1.herokuapp.com/docs/components/"
 
 
+new_items = [
+    "vstack",
+    "hstack",
+    "vr (vertical rule)",
+    "gx-{size}",
+    "gx-*-{size}",
+    "gy-{size}",
+    "gy-*-{size}",
+    "g-{size}",
+    "g-*-{size}",
+    "justify-content-*-{option}",
+    "order-*-{order-name}",
+    "gap-*-{size}",
+    "{direction}-{position}",
+    "translate-middle-{direction}",
+    "text-*-start",
+    "text-*-center",
+    "text-*-end",
+    "fs-{size}",
+    "fst-{style}",
+    "lh-{style}",
+    "text-decoration-{option}",
+    "opacity-{value}",
+    "bg-opacity-{value}",
+    "text-opacity-{value}",
+    "pe-{option} (pointer)",
+    "overflow-{option}",
+    "Icons",
+    "Accordion",
+    "Breadcrumb",
+    "Offcanvas",
+    "Pagination",
+]
+
+
 def make_offcanvas(idx):
     return dbc.Offcanvas(
         [
@@ -84,7 +119,13 @@ def make_listgroup_item(idx):
 
 
 def make_listgroup_link(title, url):
-    return dbc.ListGroupItem(title, href=url, target="_blank", className="border-0")
+    return dbc.ListGroupItem(
+        title,
+        id={"type": "list-item", "index": title},
+        href=url,
+        target="_blank",
+        className="border-0",
+    )
 
 
 def make_link(url):

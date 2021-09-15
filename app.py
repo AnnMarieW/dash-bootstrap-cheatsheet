@@ -10,10 +10,11 @@ cheatsheet cards content of the offcanvas component.
 
 """
 
-from dash import Dash, html, dcc, Input, Output, MATCH, callback_context
+from dash import Dash, html, dcc, Input, Output, MATCH, callback_context, State
 import dash_bootstrap_components as dbc
 import json
 
+from utilities import new_items
 from index_examples import examples
 from content.utility_border import utility_border
 from content.utility_color import utility_color
@@ -33,12 +34,18 @@ app = Dash(__name__, external_stylesheets=[dbc.themes.SPACELAB, dbc.icons.BOOTST
 header = html.Div(
     dbc.Container(
         [
-            html.H1("Dash Bootstrap 5 Cheatsheet", className="display-3 text-white", ),
+            html.H1("Dash Bootstrap 5 Cheatsheet", className="display-3 text-white",),
             html.P(
                 "A guide for using Bootstrap 5 Utility classes in Dash Bootstrap Components V1",
                 className="fst-italic lead",
             ),
-            dbc.Button("Highlight New", id="new", n_clicks=0, color="secondary", className="position-absolute bottom-0 start-0 p-3")
+            dbc.Button(
+                "Highlight New",
+                id="new",
+                n_clicks=0,
+                color="secondary",
+                className="position-absolute bottom-0 start-0 p-3",
+            ),
         ],
         fluid=True,
         className="py-3",
@@ -103,6 +110,27 @@ def open_card_modal(example_click, fullscreen_click):
     open_offcanvas = True if example_click else False
 
     return open_offcanvas, style, examples[example_name][0], examples[example_name][1]
+
+
+@app.callback(
+    [Output({"type": "list-item", "index": n}, "className") for n in new_items],
+    Input("new", "n_clicks"),
+    State({"type": "list-item", "index": "vstack"}, "className"),
+    prevent_initial_call=True,
+)
+def show_new(n, current_class):
+    new_className = (
+        "bg-secondary text-white border-0"
+        if current_class == "border-0"
+        else "border-0"
+    )
+    return [new_className] * len(new_items)
+
+
+def toggle_collapse(n, is_open):
+    if n:
+        return not is_open
+    return is_open
 
 
 if __name__ == "__main__":
