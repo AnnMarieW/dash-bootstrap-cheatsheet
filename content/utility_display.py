@@ -13,6 +13,7 @@ from utilities import make_link, make_listgroup_item
 
 d_none_code = """
 ```python
+d-{xs|sm|md|lg|xl|xxl}-none
 Change screen size to see responsive content
 
 html.Div("d-none", className="d-none")
@@ -39,6 +40,7 @@ d_none_preview = html.Div(
 
 d_inline_code = """
 ```python
+d-{xs|sm|md|lg|xl|xxl}-inline
 Change screen size to see responsive content
 
 html.Div("d-inline", className="d-inline")
@@ -65,6 +67,7 @@ d_inline_preview = html.Div(
 
 d_inline_block_code = """
 ```python
+d-{xs|sm|md|lg|xl|xxl}-inline-block
 Change screen size to see responsive content
 
 html.Div("d-inline-block", className="d-inline-block")
@@ -101,6 +104,7 @@ d_inline_block_preview = html.Div(
 
 d_block_code = """
 ```python
+d-{xs|sm|md|lg|xl|xxl}-block
 Change screen size to see responsive content
 
 html.Span("d-block", className="d-block")
@@ -127,6 +131,7 @@ d_block_preview = html.Div(
 
 d_grid_code = """
 ```python
+d-{xs|sm|md|lg|xl|xxl}-grid
 Change screen size to see responsive content
 
 html.Span("d-grid", className="d-grid")
@@ -153,6 +158,7 @@ d_grid_preview = html.Div(
 
 d_flex_code = """
 ```python
+d-{xs|sm|md|lg|xl|xxl}-flex
 Change screen size to see responsive content
 
 html.Span("d-flex", className="d-flex")
@@ -179,6 +185,7 @@ d_flex_preview = html.Div(
 
 d_inline_flex_code = """
 ```python
+d-{xs|sm|md|lg|xl|xxl}-inline-flex
 Change screen size to see responsive content
 
 html.Div("d-inline-flex", className="d-inline-flex")
@@ -207,6 +214,7 @@ d_inline_flex_preview = html.Div(
 
 d_print_display_code = """
 ```python
+d-print-{none|inline|inline-block|grid|flex|inline-flex}
 Change screen size to see responsive content
 
 html.Div("d-print-none", className="d-print-none")
@@ -248,14 +256,14 @@ utility_display = dbc.Card(
         ),
         dbc.ListGroup(
             [
-                make_listgroup_item("d-*-none"),
-                make_listgroup_item("d-*-inline"),
-                make_listgroup_item("d-*-inline-block"),
-                make_listgroup_item("d-*-block"),
-                make_listgroup_item("d-*-grid"),
-                make_listgroup_item("d-*-flex"),
-                make_listgroup_item("d-*-inline-flex"),
-                make_listgroup_item("d-print-{display}"),
+                make_listgroup_item("d-*-none", "display none"),
+                make_listgroup_item("d-*-inline", "display inline w breakpoints"),
+                make_listgroup_item("d-*-inline-block", "display inline-block w breakpoints"),
+                make_listgroup_item("d-*-block", "display block w breakpoints"),
+                make_listgroup_item("d-*-grid", "display grid w breakpoints"),
+                make_listgroup_item("d-*-flex", "display flex w breakpoints"),
+                make_listgroup_item("d-*-inline-flex", "display inline-flix w breakpoints"),
+                make_listgroup_item("d-print-{display}", "display in print"),
             ],
             flush=True,
             className="border-0",

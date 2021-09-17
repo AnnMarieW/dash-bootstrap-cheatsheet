@@ -7,7 +7,7 @@ import dash_bootstrap_components as dbc
 dbc_home_url = "https://dbc-v1.herokuapp.com/"
 dbc_url = "https://dbc-v1.herokuapp.com/docs/components/"
 
-
+# These items are highlighted with the "hilight new" button
 new_items = [
     "vstack",
     "hstack",
@@ -103,19 +103,19 @@ def make_offcanvas(idx):
     )
 
 
-def make_listgroup_item(idx):
-    return html.Div(
-        [
-            dbc.ListGroupItem(
-                idx,
-                id={"type": "list-item", "index": idx},
-                n_clicks=0,
-                className="border-0",
-            ),
-            make_offcanvas(idx),
-        ],
-        style={"minWidth": 200},
+def make_listgroup_item(idx, tooltip=None):
+    listgroup_item = dbc.ListGroupItem(
+        idx, id={"type": "list-item", "index": idx}, n_clicks=0, className="border-0",
     )
+    add_tooltip = dbc.Tooltip(
+        tooltip,
+        id={"type": "tooltip", "index": idx},
+        target={"type": "list-item", "index": idx},
+        #placement="auto-end",
+    )
+    if tooltip:
+        return html.Div([listgroup_item, add_tooltip, make_offcanvas(idx)])
+    return html.Div([listgroup_item, make_offcanvas(idx)])
 
 
 def make_listgroup_link(title, url):

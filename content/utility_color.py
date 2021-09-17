@@ -131,14 +131,15 @@ bg_transparent_preview = html.Div(
 
 bg_gradient_code = """
 ```
-html.P("bg-primary bg-gradient", className="bg-primary bg-gradient")
+html.P("bg-primary", className="bg-primary text-white"),
+html.P("bg-primary bg-gradient", className="bg-primary bg-gradient text-white")
 ```"""
 
 
 bg_gradient_preview = html.Div(
     [
-        html.P("bg-primary", className="bg-primary"),
-        html.P("bg-primary bg-gradient", className="bg-primary bg-gradient"),
+        html.P("bg-primary", className="bg-primary text-white"),
+        html.P("bg-primary bg-gradient", className="bg-primary bg-gradient text-white"),
     ]
 )
 
@@ -154,14 +155,14 @@ utility_color = dbc.Card(
         ),
         dbc.ListGroup(
             [
-                make_listgroup_item("text-{color}"),
-                make_listgroup_item("text-body"),
-                make_listgroup_item("text-muted"),
-                make_listgroup_item("text-black-50"),
-                make_listgroup_item("text-white-50"),
-                make_listgroup_item("bg-{color}"),
-                make_listgroup_item("bg-transparent"),
-                make_listgroup_item("bg-gradient"),
+                make_listgroup_item("text-{color}", "{primary|secondary|success|danger|warning|info|light|dark|white}"),
+                make_listgroup_item("text-body", "Text color used in the body"),
+                make_listgroup_item("text-muted", "Text color muted"),
+                make_listgroup_item("text-black-50", "deprecated - use opacity"),
+                make_listgroup_item("text-white-50", "deprecated - use opacity"),
+                make_listgroup_item("bg-{color}", "background {primary|secondary|success|danger|warning|info|light|dark|white}"),
+                make_listgroup_item("bg-transparent", "background transparent"),
+                make_listgroup_item("bg-gradient", "background gradient"),
             ],
             flush=True,
             className="border-0",

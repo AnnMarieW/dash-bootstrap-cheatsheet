@@ -98,9 +98,9 @@ utility_opacity = dbc.Card(
         ),
         dbc.ListGroup(
             [
-                make_listgroup_item("opacity-{value}"),
-                make_listgroup_item("bg-opacity-{value}"),
-                make_listgroup_item("text-opacity-{value}"),
+                make_listgroup_item("opacity-{value}", "opacity of elements"),
+                make_listgroup_item("bg-opacity-{value}", "background opacity {100|75|50|25|0}"),
+                make_listgroup_item("text-opacity-{value}","text opacity {100|75|50|25|0}"),
             ],
             flush=True,
             className="border-0",

@@ -264,8 +264,6 @@ g_dev_size_preview = dbc.Container(
     ],
     fluid=True,
 )
-
-
 utility_grid = dbc.Card(
     [
         dbc.CardHeader(
@@ -281,12 +279,12 @@ utility_grid = dbc.Card(
                     f"For Grid components see the *dash-bootstrap-components* [Layout section]({dbc_url}/layout/)",
                     className="p-2",
                 ),
-                make_listgroup_item("gx-{size}"),
-                make_listgroup_item("gx-*-{size}"),
-                make_listgroup_item("gy-{size}"),
-                make_listgroup_item("gy-*-{size}"),
-                make_listgroup_item("g-{size}"),
-                make_listgroup_item("g-*-{size}"),
+                make_listgroup_item("gx-{size}", "Gutter horizontal"),
+                make_listgroup_item("gx-*-{size}", "Gutter horizontal w breakpoints"),
+                make_listgroup_item("gy-{size}", "Gutter vertical"),
+                make_listgroup_item("gy-*-{size}", "Gutter vertical w breakpoints"),
+                make_listgroup_item("g-{size}", "Gutter horizontal & vertical"),
+                make_listgroup_item("g-*-{size}", "Gutter horizontal & vertical w breakpoints"),
             ],
             flush=True,
             className="border-0",

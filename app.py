@@ -31,20 +31,36 @@ from content.plotly_components import plotly_links
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.SPACELAB, dbc.icons.BOOTSTRAP])
 
+dbc_logo = "https://user-images.githubusercontent.com/72614349/133677816-5ea52424-bfd3-4405-9ccf-8ad0dbd18020.png"
+bootstrap_logo = "https://user-images.githubusercontent.com/72614349/133683669-eef08b42-2eff-49df-b0a5-33a7754a2b86.png"
+
 header = html.Div(
     dbc.Container(
         [
-            html.H1("Dash Bootstrap 5 Cheatsheet", className="display-3 text-white",),
+            html.H1("Dash Bootstrap Cheatsheet", className="display-3 text-white",),
             html.P(
                 "A guide for using Bootstrap 5 Utility classes in Dash Bootstrap Components V1",
                 className="fst-italic lead",
+            ),
+            html.Div(
+                [
+                    html.Img(src=dbc_logo, height=125,
+                          #   className="m-2 ratio ratio-1x1"
+                              className="m-2"
+                             ),
+                    html.Img(src=bootstrap_logo, height=125,
+                             className="m-2"
+                             )
+                ],
+             #   className="mx-auto",
+              #  style={"height": 50}
             ),
             dbc.Button(
                 "Highlight New",
                 id="new",
                 n_clicks=0,
                 color="secondary",
-                className="position-absolute bottom-0 start-0 p-3",
+                className="position-absolute bottom-0 end-0 p-3",
             ),
         ],
         fluid=True,
@@ -81,6 +97,7 @@ app.layout = dbc.Container(
                 dbc.Col(plotly_links),
             ]
         ),
+        html.Div(id="dummy")
     ],
     fluid=True,
 )

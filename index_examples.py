@@ -114,10 +114,10 @@ examples = {
     "visible/invisible": [visible_code, visible_preview],
     #
     # Utility flex examples
-    "flex-*-row": [flex_row_code, flex_row_preview],
-    "flex-*-row-reverse": [flex_row_reverse_code, flex_row_reverse_preview],
-    "flex-*-column": [flex_column_code, flex_column_preview],
-    "flex-*-column-reverse": [flex_column_reverse_code, flex_column_reverse_preview],
+    #"flex-*-row": [flex_row_code, flex_row_preview],
+    #"flex-*-row-reverse": [flex_row_reverse_code, flex_row_reverse_preview],
+    #"flex-*-column": [flex_column_code, flex_column_preview],
+    #"flex-*-column-reverse": [flex_column_reverse_code, flex_column_reverse_preview],
     "justify-content-*-{option}": [justify_content_code, justify_content_preview],
     "align-items-*-{option}": [align_items_code, align_items_preview],
     "align-self-*-{option}": [align_self_code, align_self_preview],
