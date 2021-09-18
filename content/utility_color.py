@@ -59,9 +59,8 @@ text_muted_preview = html.Div(
 
 
 text_white_50_code = """
-```
 Note: Deprecated use "opacity-*" instead
-
+```
 html.P("text-white-50", className="text-white-50")
 ```"""
 
@@ -103,9 +102,9 @@ bg_color_preview = html.Div(
 
 
 text_black_50_code = """
-```
-Note: Deprecated use "opacity-*" instead
 
+Note: Deprecated use "opacity-*" instead
+```
 html.P("text-black-50", className="text-black-50")
 ```"""
 
@@ -155,12 +154,18 @@ utility_color = dbc.Card(
         ),
         dbc.ListGroup(
             [
-                make_listgroup_item("text-{color}", "{primary|secondary|success|danger|warning|info|light|dark|white}"),
+                make_listgroup_item(
+                    "text-{color}",
+                    "{primary|secondary|success|danger|warning|info|light|dark|white}",
+                ),
                 make_listgroup_item("text-body", "Text color used in the body"),
                 make_listgroup_item("text-muted", "Text color muted"),
                 make_listgroup_item("text-black-50", "deprecated - use opacity"),
                 make_listgroup_item("text-white-50", "deprecated - use opacity"),
-                make_listgroup_item("bg-{color}", "background {primary|secondary|success|danger|warning|info|light|dark|white}"),
+                make_listgroup_item(
+                    "bg-{color}",
+                    "background {primary|secondary|success|danger|warning|info|light|dark|white}",
+                ),
                 make_listgroup_item("bg-transparent", "background transparent"),
                 make_listgroup_item("bg-gradient", "background gradient"),
             ],

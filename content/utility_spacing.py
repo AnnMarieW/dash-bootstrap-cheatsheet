@@ -12,11 +12,11 @@ from utilities import make_link, make_listgroup_item
 
 
 m_code = """
-```python
+
 Margin can be used for responsive cases with the help of options:
 m-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}
 for example: "m-sm-2"
-
+```
 html.Div(
     [
         html.Div("m-0", className="m-0 bg-light border"),
@@ -46,11 +46,11 @@ m_preview = html.Div(
 
 
 mt_code = """
-```python
+
 Margin can be used for responsive cases with the help of options:
 m-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}
 for example: "m-sm-2"
-
+```
 html.Div(
     [
         html.Div("mt-0", className="mt-0 bg-light border"),
@@ -80,11 +80,11 @@ mt_preview = html.Div(
 
 
 me_code = """
-```python
+
 Margin can be used for responsive cases with the help of options:
 m-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}
 for example: "m-sm-2"
-
+```
 html.Div(
     [
         html.Div("me-0", className="me-0 bg-light border"),
@@ -114,11 +114,11 @@ me_preview = html.Div(
 
 
 mb_code = """
-```python
+
 Margin can be used for responsive cases with the help of options:
 m-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}
 for example: "m-sm-2"
-
+```
 html.Div(
     [
         html.Div("mb-0", className="mb-0 bg-light border"),
@@ -147,11 +147,11 @@ mb_preview = html.Div(
 
 
 ms_code = """
-```python
+
 Margin can be used for responsive cases with the help of options:
 m-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}
 for example: "m-sm-2"
-
+```
 html.Div(
     [
         html.Div("ms-0", className="ms-0 bg-light border"),
@@ -181,11 +181,11 @@ ms_preview = html.Div(
 
 
 mx_code = """
-```python
+
 Margin can be used for responsive cases with the help of options:
 m-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}
 for example: "m-sm-2"
-
+```
 html.Div(
     [
         html.Div("mx-0", className="mx-0 bg-light border"),
@@ -215,11 +215,11 @@ mx_preview = html.Div(
 
 
 my_code = """
-```python
+
 Margin can be used for responsive cases with the help of options:
 m-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}
 for example: "m-sm-2"
-
+```
 html.Div(
     [
         html.Div("my-0", className="my-0 bg-light border"),
@@ -249,11 +249,11 @@ my_preview = html.Div(
 
 
 p_code = """
-```python
+
 Padding can be used for responsive cases with the help of options:
 p-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}
 for example: "p-sm-2"
-
+```
 html.Div(
     [
         html.Div("p-0", className="p-0 bg-light border"),
@@ -283,11 +283,11 @@ p_preview = html.Div(
 
 
 pt_code = """
-```python
+
 Padding can be used for responsive cases with the help of options:
 pt-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}
 for example: "pt-sm-2"
-
+```
 html.Div(
     [
         html.Div("p-0", className="pt-0 bg-light border"),
@@ -317,11 +317,11 @@ pt_preview = html.Div(
 
 
 pe_code = """
-```python
+
 Padding can be used for responsive cases with the help of options:
 pe-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}
 for example: "pe-sm-2"
-
+```
 html.Div(
     [
         html.Div("pe-0", className="pe-0 bg-light border"),
@@ -351,11 +351,11 @@ pe_preview = html.Div(
 
 
 pb_code = """
-```python
+
 Padding can be used for responsive cases with the help of options:
 pb-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}
 for example: "pb-sm-2"
-
+```
 html.Div(
     [
         html.Div("pb-0", className="pb-0 bg-light border"),
@@ -384,11 +384,11 @@ pb_preview = html.Div(
 
 
 ps_code = """
-```python
+
 Padding can be used for responsive cases with the help of options:
 ps-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}
 for example: "ps-sm-2"
-
+```
 html.Div(
     [
         html.Div("ps-0", className="ps-0 bg-light border"),
@@ -418,10 +418,11 @@ ps_preview = html.Div(
 
 
 px_code = """
-```python
+
 Padding can be used for responsive cases with the help of options:
 px-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}
 for example: "px-sm-2"
+```
 
 html.Div(
     [
@@ -452,11 +453,11 @@ px_preview = html.Div(
 
 
 py_code = """
-```python
+
 Padding can be used for responsive cases with the help of options:
 py-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}
 for example: "py-sm-2"
-
+```
 html.Div(
     [
         html.Div("py-0", className="py-0 bg-light border"),
@@ -486,11 +487,11 @@ py_preview = html.Div(
 
 
 gap_code = """
-```python
+
 Gap can be used for responsive cases with the help of 
 gap-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5} 
 for example: "gap-sm-0"
-
+```
 html.Div(
     [
         html.Div("Grid item 1", className="p-2 bg-light border"),
@@ -522,21 +523,66 @@ utility_spacing = dbc.Card(
         ),
         dbc.ListGroup(
             [
-                make_listgroup_item("m-*-{option}","margin all sides with breakpoints and size: m-{xs|sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}"),
-                make_listgroup_item("mt-*-{option}", "margin on top with breakpoints and size: m-{xs|sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}"),
-                make_listgroup_item("me-*-{option}", "margin at end with breakpoints and size: m-{xs|sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}"),
-                make_listgroup_item("mb-*-{option}", "margin bottom with breakpoints and size: m-{xs|sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}"),
-                make_listgroup_item("ms-*-{option}", "margin at start with breakpoints and size: m-{xs|sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}"),
-                make_listgroup_item("mx-*-{option}", "margin horizontal with breakpoints and size: m-{xs|sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}"),
-                make_listgroup_item("my-*-{option}", "margin vertical with breakpoints and size: m-{xs|sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}"),
-                make_listgroup_item("p-*-{option}", "padding all sides with breakpoints and size: m-{xs|sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}"),
-                make_listgroup_item("pt-*-{option}", "padding on top with breakpoints and size: m-{xs|sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}"),
-                make_listgroup_item("pe-*-{option}", "padding at end with breakpoints and size: m-{xs|sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}"),
-                make_listgroup_item("pb-*-{option}", "padding on bottom with breakpoints and size: m-{xs|sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}"),
-                make_listgroup_item("ps-*-{option}", "padding at start with breakpoints and size: m-{xs|sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}"),
-                make_listgroup_item("px-*-{option}", "padding horizontal with breakpoints and size: m-{xs|sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}"),
-                make_listgroup_item("py-*-{option}", "padding vertical with breakpoints and size: m-{xs|sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}"),
-                make_listgroup_item("gap-*-{size}", "gap all sides with breakpoints and size: m-{xs|sm|md|lg|xl|xxl}-{0|1|2|3|4|5}"),
+                make_listgroup_item(
+                    "m-*-{option}",
+                    "margin all sides with breakpoints and size: m-{xs|sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}",
+                ),
+                make_listgroup_item(
+                    "mt-*-{option}",
+                    "margin on top with breakpoints and size: m-{xs|sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}",
+                ),
+                make_listgroup_item(
+                    "me-*-{option}",
+                    "margin at end with breakpoints and size: m-{xs|sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}",
+                ),
+                make_listgroup_item(
+                    "mb-*-{option}",
+                    "margin bottom with breakpoints and size: m-{xs|sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}",
+                ),
+                make_listgroup_item(
+                    "ms-*-{option}",
+                    "margin at start with breakpoints and size: m-{xs|sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}",
+                ),
+                make_listgroup_item(
+                    "mx-*-{option}",
+                    "margin horizontal with breakpoints and size: m-{xs|sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}",
+                ),
+                make_listgroup_item(
+                    "my-*-{option}",
+                    "margin vertical with breakpoints and size: m-{xs|sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}",
+                ),
+                make_listgroup_item(
+                    "p-*-{option}",
+                    "padding all sides with breakpoints and size: m-{xs|sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}",
+                ),
+                make_listgroup_item(
+                    "pt-*-{option}",
+                    "padding on top with breakpoints and size: m-{xs|sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}",
+                ),
+                make_listgroup_item(
+                    "pe-*-{option}",
+                    "padding at end with breakpoints and size: m-{xs|sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}",
+                ),
+                make_listgroup_item(
+                    "pb-*-{option}",
+                    "padding on bottom with breakpoints and size: m-{xs|sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}",
+                ),
+                make_listgroup_item(
+                    "ps-*-{option}",
+                    "padding at start with breakpoints and size: m-{xs|sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}",
+                ),
+                make_listgroup_item(
+                    "px-*-{option}",
+                    "padding horizontal with breakpoints and size: m-{xs|sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}",
+                ),
+                make_listgroup_item(
+                    "py-*-{option}",
+                    "padding vertical with breakpoints and size: m-{xs|sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}",
+                ),
+                make_listgroup_item(
+                    "gap-*-{size}",
+                    "gap all sides with breakpoints and size: m-{xs|sm|md|lg|xl|xxl}-{0|1|2|3|4|5}",
+                ),
             ],
             flush=True,
             className="border-0",

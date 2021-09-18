@@ -12,10 +12,10 @@ from utilities import make_link, make_listgroup_item
 
 
 d_none_code = """
-```python
+
 d-{xs|sm|md|lg|xl|xxl}-none
 Change screen size to see responsive content
-
+```
 html.Div("d-none", className="d-none")
 html.Div("d-sm-none", className="d-sm-none")
 html.Div("d-md-none", className="d-md-none")
@@ -39,10 +39,10 @@ d_none_preview = html.Div(
 
 
 d_inline_code = """
-```python
+
 d-{xs|sm|md|lg|xl|xxl}-inline
 Change screen size to see responsive content
-
+```
 html.Div("d-inline", className="d-inline")
 html.Div("d-sm-inline", className="d-sm-inline")
 html.Div("d-md-inline", className="d-md-inline")
@@ -66,10 +66,10 @@ d_inline_preview = html.Div(
 
 
 d_inline_block_code = """
-```python
+
 d-{xs|sm|md|lg|xl|xxl}-inline-block
 Change screen size to see responsive content
-
+```
 html.Div("d-inline-block", className="d-inline-block")
 html.Div("d-sm-inline-block", className="d-sm-inline-block")
 html.Div("d-md-inline-block", className="d-md-inline-block")
@@ -103,10 +103,10 @@ d_inline_block_preview = html.Div(
 
 
 d_block_code = """
-```python
+
 d-{xs|sm|md|lg|xl|xxl}-block
 Change screen size to see responsive content
-
+```
 html.Span("d-block", className="d-block")
 html.Span("d-sm-block", className="d-sm-block")
 html.Span("d-md-block", className="d-md-block")
@@ -130,10 +130,10 @@ d_block_preview = html.Div(
 
 
 d_grid_code = """
-```python
+
 d-{xs|sm|md|lg|xl|xxl}-grid
 Change screen size to see responsive content
-
+```
 html.Span("d-grid", className="d-grid")
 html.Span("d-sm-grid", className="d-sm-grid")
 html.Span("d-md-grid", className="d-md-grid")
@@ -157,10 +157,10 @@ d_grid_preview = html.Div(
 
 
 d_flex_code = """
-```python
+
 d-{xs|sm|md|lg|xl|xxl}-flex
 Change screen size to see responsive content
-
+```
 html.Span("d-flex", className="d-flex")
 html.Span("d-sm-flex", className="d-sm-flex")
 html.Span("d-md-flex", className="d-md-flex")
@@ -184,10 +184,10 @@ d_flex_preview = html.Div(
 
 
 d_inline_flex_code = """
-```python
+
 d-{xs|sm|md|lg|xl|xxl}-inline-flex
 Change screen size to see responsive content
-
+```
 html.Div("d-inline-flex", className="d-inline-flex")
 html.Div("d-sm-inline-flex", className="d-sm-inline-flex")
 html.Div("d-md-inline-flex", className="d-md-inline-flex")
@@ -213,10 +213,10 @@ d_inline_flex_preview = html.Div(
 
 
 d_print_display_code = """
-```python
+
 d-print-{none|inline|inline-block|grid|flex|inline-flex}
 Change screen size to see responsive content
-
+```
 html.Div("d-print-none", className="d-print-none")
 html.Div("d-print-inline", className="d-print-inline")
 html.Div("d-print-inline-block", className="d-print-inline-block")
@@ -258,11 +258,15 @@ utility_display = dbc.Card(
             [
                 make_listgroup_item("d-*-none", "display none"),
                 make_listgroup_item("d-*-inline", "display inline w breakpoints"),
-                make_listgroup_item("d-*-inline-block", "display inline-block w breakpoints"),
+                make_listgroup_item(
+                    "d-*-inline-block", "display inline-block w breakpoints"
+                ),
                 make_listgroup_item("d-*-block", "display block w breakpoints"),
                 make_listgroup_item("d-*-grid", "display grid w breakpoints"),
                 make_listgroup_item("d-*-flex", "display flex w breakpoints"),
-                make_listgroup_item("d-*-inline-flex", "display inline-flix w breakpoints"),
+                make_listgroup_item(
+                    "d-*-inline-flex", "display inline-flix w breakpoints"
+                ),
                 make_listgroup_item("d-print-{display}", "display in print"),
             ],
             flush=True,

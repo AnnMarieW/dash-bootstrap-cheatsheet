@@ -9,11 +9,11 @@ import dash_bootstrap_components as dbc
 from utilities import make_link, make_listgroup_item
 
 text_start_code = """
-```
+
 text-start can be used for responsive cases with the help of
 text-{sm|md|lg|xl|xxl}-start 
 example "text-sm-start
-
+```
 html.P("Start aligned text on all viewport sizes", className="text-start")
 html.P("Start aligned text on all viewport sized small or wider", className="text-sm-start")
 html.P("Start aligned text on all viewport sized medium or wider", className="text-md-start")
@@ -50,11 +50,11 @@ text_start_preview = html.Div(
 
 
 text_center_code = """
-```
+
 text-center can be used for responsive cases with the help of
 text-{sm|md|lg|xl|xxl}-center
 example "text-sm-center
-
+```
 html.P("Center aligned text on all viewport sizes", className="text-center")
 html.P("Center aligned text on all viewport sized small or wider", className="text-sm-center")
 html.P("Center aligned text on all viewport sized medium or wider", className="text-md-center")
@@ -91,11 +91,11 @@ text_center_preview = html.Div(
 
 
 text_end_code = """
-```
+
 text-end can be used for responsive cases with the help of
 text-{sm|md|lg|xl|xxl}-end 
 example "text-sm-end
-
+```
 html.P("End aligned text on all viewport sizes", className="text-end")
 html.P("End aligned text on all viewport sized small or wider", className="text-sm-end")
 html.P("End aligned text on all viewport sized medium or wider", className="text-md-end")
@@ -311,20 +311,43 @@ utility_text = dbc.Card(
         ),
         dbc.ListGroup(
             [
-                make_listgroup_item("text-*-start", "align text - start with breakpoings {xs|sm|md|lg|xl|xxl}"),
-                make_listgroup_item("text-*-center", "align text - center with breakpoings {xs|sm|md|lg|xl|xxl}"),
-                make_listgroup_item("text-*-end", "align text - end with breakpoings {xs|sm|md|lg|xl|xxl}"),
+                make_listgroup_item(
+                    "text-*-start",
+                    "align text - start with breakpoings {xs|sm|md|lg|xl|xxl}",
+                ),
+                make_listgroup_item(
+                    "text-*-center",
+                    "align text - center with breakpoings {xs|sm|md|lg|xl|xxl}",
+                ),
+                make_listgroup_item(
+                    "text-*-end",
+                    "align text - end with breakpoings {xs|sm|md|lg|xl|xxl}",
+                ),
                 make_listgroup_item("text-wrap", "text wraps in parent"),
                 make_listgroup_item("text-nowrap", "text may overflow parent"),
-                make_listgroup_item("text-break", "long words will break to stay in parent"),
-                make_listgroup_item("text-{option}","Transform text with text-{lowercase|uppercase|capitalize"),
-                make_listgroup_item("fs-{size}", "font size {1|2|3|4|5|6} corresponds to heading sizes"),
-                make_listgroup_item("fw-{weight}", "font wight {bold|bolder|normal|light|lighter"),
-                make_listgroup_item("fst-{style}","font style {italic|normal}"),
+                make_listgroup_item(
+                    "text-break", "long words will break to stay in parent"
+                ),
+                make_listgroup_item(
+                    "text-{option}",
+                    "Transform text with text-{lowercase|uppercase|capitalize",
+                ),
+                make_listgroup_item(
+                    "fs-{size}", "font size {1|2|3|4|5|6} corresponds to heading sizes"
+                ),
+                make_listgroup_item(
+                    "fw-{weight}", "font wight {bold|bolder|normal|light|lighter"
+                ),
+                make_listgroup_item("fst-{style}", "font style {italic|normal}"),
                 make_listgroup_item("lh-{style}", "line height {1|sm|base|lg"),
                 make_listgroup_item("font-monospace", "font monospace"),
-                make_listgroup_item("text-reset", "reset text or link color so color is from parent"),
-                make_listgroup_item("text-decoration-{option}", "text-decoration{underline|line-through|none"),
+                make_listgroup_item(
+                    "text-reset", "reset text or link color so color is from parent"
+                ),
+                make_listgroup_item(
+                    "text-decoration-{option}",
+                    "text-decoration{underline|line-through|none",
+                ),
             ],
             flush=True,
             className="border-0",

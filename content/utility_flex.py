@@ -4,17 +4,17 @@ This is the card and content of the code snippets and preview content for
 Utility:Flex
 """
 
-from dash import html
+from dash import html, dcc
 import dash_bootstrap_components as dbc
 from utilities import make_link, make_listgroup_item
 
 
 flex_row_code = """
-```
+
 Display flex can be used for responsive cases as well with the help of 
 flex-{sm|md|lg|xl|xxl}-row
 example:  "flex-sm-row"
-
+```
 html.Div(
     [
         html.Div("Flex item 1", className="p-2 bg-secondary"),
@@ -37,11 +37,11 @@ flex_row_preview = html.Div(
 
 
 flex_row_reverse_code = """
-```
+
 Display flex can be used for responsive cases as well with the help of 
 flex-{sm|md|lg|xl|xxl}-row-reverse
 example:  "flex-sm-row-reverse"
-
+```
 html.Div(
     [
         html.Div("Flex item 1", className="p-2 bg-secondary"),
@@ -64,11 +64,11 @@ flex_row_reverse_preview = html.Div(
 
 
 flex_column_code = """
-```
+
 Display flex can be used for responsive cases as well with the help of 
 flex-{sm|md|lg|xl|xxl}-column
 example:  "flex-sm-column"
-
+```
 html.Div(
     [
         html.Div("Flex item 1", className="p-2 bg-secondary"),
@@ -90,11 +90,11 @@ flex_column_preview = html.Div(
 )
 
 flex_column_reverse_code = """
-```
+
 Display flex can be used for responsive cases as well with the help of 
 flex-{sm|md|lg|xl|xxl}-column-reverse
 example:  "flex-sm-column-reverse"
-
+```
 html.Div(
     [
         html.Div("Flex item 1", className="p-2 bg-secondary"),
@@ -117,11 +117,11 @@ flex_column_reverse_preview = html.Div(
 
 
 justify_content_code = """
-```
+
 justify-content can be used for responsive cases as well with the help of 
 justify-content-{sm|md|lg|xl|xxl}-{start|end|center|between|around|evenly}
 example:  "justify-content-sm-start"
-
+```
 flex_items = [
         html.Div("Flex item 1", className="p-2 bg-secondary"),
         html.Div("Flex item 2", className="p-2 bg-secondary"),
@@ -171,11 +171,11 @@ justify_content_preview = html.Div(
 
 
 align_items_code = """
-```
+
 align-items can be used for responsive cases as well with the help of 
 align-items-{sm|md|lg|xl|xxl}-{start|end|center|baseline|stretch}
 example:  "align-items-sm-start"
-
+```
 flex_items = [
     html.Div("Flex item 1", className="p-2 bg-secondary"),
     html.Div("Flex item 2", className="p-2 bg-secondary"),
@@ -225,15 +225,15 @@ align_items_preview = html.Div(
 )
 
 align_self_code = """
-```
+
 align-self can be used for responsive cases as well with the help of
 align-self-{sm|md|lg|xl|xxl}-{start|end|center|baseline|stretch}
-
-def make_flex_align_items(className):
+```
+def make_flex_align_items(example_class_name):
     return html.Div(
         [
             html.Div("Flex item", className="p-2 bg-secondary"),
-            html.Div("Aligned Flex item", className=className + " p2 bg-secondary"),
+            html.Div("Aligned Flex item", className=example_class_name + " p2 bg-secondary"),
             html.Div("Flex item", className="p-2 bg-secondary"),
         ],
         className="d-flex bg-light border mb-2",
@@ -254,12 +254,13 @@ align_self_preview = html.Div(
 ```"""
 
 
-def make_flex_align_items(className):
+def make_flex_align_items(example_class_name):
     return html.Div(
         [
             html.Div("Flex item", className="p-2 bg-secondary border"),
             html.Div(
-                "Aligned Flex item", className=className + " p2 bg-secondary border"
+                "Aligned Flex item",
+                className=example_class_name + " p2 bg-secondary border",
             ),
             html.Div("Flex item", className="p-2 bg-secondary border"),
         ],
@@ -279,10 +280,10 @@ align_self_preview = html.Div(
 )
 
 flex_fill_code = """
-```
+
 flex-fill can be used for responsive cases as well with the help of
 flex-{sm|md|lg|xl|xxl}-fill
-
+```
 flex_fill_preview = html.Div(
     [
         html.Div("Flex item with a lot of content", className="flex-fill p-2 bg-secondary"),
@@ -306,10 +307,10 @@ flex_fill_preview = html.Div(
     className="d-flex bg-light border",
 )
 flex_grow_code = """
-```
+
 flex-grow can be used for responsive cases as well with the help of
 flex-{sm|md|lg|xl|xxl}-grow-{0|1}
-
+```
 flex_grow_preview = html.Div(
     [
         html.Div("Flex item 1", className="flex-grow-1 p-2 bg-secondary"),
@@ -330,10 +331,10 @@ flex_grow_preview = html.Div(
 )
 
 flex_shrink_code = """
-```
+
 flex-shrink can be used for responsive cases as well with the help of
 flex-{sm|md|lg|xl|xxl}-shrink-{0|1}
-
+```
 flex_shrink_preview = html.Div(
     [
         html.Div("Flex item 1", className="w-100 p-2 bg-secondary"),
@@ -352,10 +353,10 @@ flex_shrink_preview = html.Div(
 )
 
 flex_nowrap_code = """
-```
+
 flex-nowrap can be used for responsive cases as well with the help of 
 flex-{sm|md|lg|xl|xxl}-nowrap
-
+```
 html.Div(
     [
         html.Div("Flex item 1", className="p-2 bg-secondary"),
@@ -381,9 +382,11 @@ flex_nowrap_preview = html.Div(
 )
 
 flex_wrap_code = """
-```
+
 flex-wrap can be used for responsive cases as well with the help of
 flex-{sm|md|lg|xl|xxl}-wrap
+
+```
 html.Div(
     [html.Div("Flex item", className="p-2 bg-secondary")] * 15,
     className="d-flex flex-wrap border bg-light",
@@ -397,10 +400,10 @@ flex_wrap_preview = html.Div(
 
 
 flex_wrap_reverse_code = """
-```
+
 flex-wrap-reverse can be used for responsive cases as well with the help of
 flex-reverse-{sm|md|lg|xl|xxl}-wrap
-
+```
 html.Div(
     [html.Div("Flex item", className="p-2 bg-secondary")] * 15,
     className="d-flex flex-wrap-reverse border bg-light",
@@ -413,10 +416,10 @@ flex_wrap_reverse_preview = html.Div(
 )
 
 order_number_code = """
-```
+
 order can be used for responsive cases as well with the help of
 order-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5} 
-
+```
 order_number_preview = html.Div(
     [
         html.Div("flex item 1", className="order-3 p-2 bg-secondary" ),
@@ -436,10 +439,10 @@ order_number_preview = html.Div(
 )
 
 order_name_code = """
-```
+
 order can be used for responsive cases as well with the help of
 order-{sm|md|lg|xl|xxl}-{first|last} 
-
+```
 html.Div(
     [
         html.Div("flex item 1", className="order-3 p-2 bg-secondary"),
@@ -462,10 +465,10 @@ order_name_preview = html.Div(
 
 
 align_content_code = """
-```
+
 align-content can be used for responsive cases as well with the help of
 align-content-{sm|md|lg|xl|xxl}-{start|end|center|around|stretch} 
-
+```
 html.Div(
     [
         html.Div(
@@ -537,10 +540,14 @@ utility_flex = dbc.Card(
         ),
         dbc.ListGroup(
             [
-                make_listgroup_item("flex-*-row"),
-                make_listgroup_item("flex-*-row-reverse"),
-                make_listgroup_item("flex-*-column"),
-                make_listgroup_item("flex-*-column-reverse"),
+                dcc.Markdown(
+                    f"See [CSS Tricks flexbox guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background) for background, terminology, and guidelines",
+                    className="p-2",
+                ),
+                # make_listgroup_item("flex-*-row"),
+                # make_listgroup_item("flex-*-row-reverse"),
+                # make_listgroup_item("flex-*-column"),
+                # make_listgroup_item("flex-*-column-reverse"),
                 make_listgroup_item("justify-content-*-{option}"),
                 make_listgroup_item("align-items-*-{option}"),
                 make_listgroup_item("align-self-*-{option}"),
@@ -550,8 +557,8 @@ utility_flex = dbc.Card(
                 make_listgroup_item("flex-*-nowrap"),
                 make_listgroup_item("flex-*-wrap"),
                 make_listgroup_item("flex-*-wrap-reverse"),
-                make_listgroup_item("order-*-{order-number}"),
-                make_listgroup_item("order-*-{order-name}"),
+                make_listgroup_item("order-*-{number}"),
+                make_listgroup_item("order-*-{name}"),
                 make_listgroup_item("align-content-*-{option}"),
             ],
             flush=True,

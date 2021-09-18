@@ -170,15 +170,23 @@ utility_border = dbc.Card(
         dbc.ListGroup(
             [
                 make_listgroup_item("border", "border all sides"),
-                make_listgroup_item("border-{direction}", "border on {top|end|bottom|start}"),
+                make_listgroup_item(
+                    "border-{direction}", "border on {top|end|bottom|start}"
+                ),
                 make_listgroup_item("border-0", "no border"),
-                make_listgroup_item("border-{direction}-0", "no border {top|end|bottom|start} "),
-                make_listgroup_item("border-{color}", "{primary|secondary|success|danger|warning|info|light|dark|white}"),
+                make_listgroup_item(
+                    "border-{direction}-0", "no border {top|end|bottom|start} "
+                ),
+                make_listgroup_item(
+                    "border-{color}",
+                    "{primary|secondary|success|danger|warning|info|light|dark|white}",
+                ),
                 make_listgroup_item("border-{size}", "border width {1|2|3|4|5}"),
                 make_listgroup_item("rounded", "border radius all corners"),
-                make_listgroup_item("rounded-{corner}", " radius at {top|end|bottom|start|circle|pill}"),
-                make_listgroup_item("rounded-{size}", "border radius size {0|1|2|3}"
-),
+                make_listgroup_item(
+                    "rounded-{corner}", " radius at {top|end|bottom|start|circle|pill}"
+                ),
+                make_listgroup_item("rounded-{size}", "border radius size {0|1|2|3}"),
             ],
             flush=True,
             className="border-0",

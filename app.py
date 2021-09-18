@@ -44,16 +44,16 @@ header = html.Div(
             ),
             html.Div(
                 [
-                    html.Img(src=dbc_logo, height=125,
-                          #   className="m-2 ratio ratio-1x1"
-                              className="m-2"
-                             ),
-                    html.Img(src=bootstrap_logo, height=125,
-                             className="m-2"
-                             )
+                    html.Img(
+                        src=dbc_logo,
+                        height=125,
+                        #   className="m-2 ratio ratio-1x1"
+                        className="m-2",
+                    ),
+                    html.Img(src=bootstrap_logo, height=125, className="m-2"),
                 ],
-             #   className="mx-auto",
-              #  style={"height": 50}
+                #   className="mx-auto",
+                #  style={"height": 50}
             ),
             dbc.Button(
                 "Highlight New",
@@ -83,6 +83,7 @@ app.layout = dbc.Container(
         dbc.Row(
             [
                 dbc.Col(utility_grid),
+                dbc.Col(utility_flex),
                 dbc.Col(utility_border),
                 dbc.Col(utility_color),
                 dbc.Col(utility_display),
@@ -91,13 +92,12 @@ app.layout = dbc.Container(
                 dbc.Col(utility_position),
                 dbc.Col(utility_spacing),
                 dbc.Col(utility_text),
-                dbc.Col(utility_flex),
                 dbc.Col(dbc_components1),
                 dbc.Col(dbc_components2),
                 dbc.Col(plotly_links),
             ]
         ),
-        html.Div(id="dummy")
+        html.Div(id="dummy"),
     ],
     fluid=True,
 )

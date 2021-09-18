@@ -103,9 +103,9 @@ shadow_preview = html.Div(
 )
 
 overflow_code = """
-```
-overflow-{auto|hidden|visible|scroll}
 
+overflow-{auto|hidden|visible|scroll}
+```
 html.Div(
     [
         html.Div(
@@ -227,9 +227,9 @@ h_option_preview = html.Div(
 
 
 mw_100_code = """
-```
-This is commonly used with images
 
+This is commonly used with images
+```
 html.Div(
     html.Div("max width 100%", className="mh-100 bg-info", style={"height": 100}),
     style={"height": 200},
@@ -246,9 +246,9 @@ mw_100_preview = html.Div(
 
 
 mh_100_code = """
-```
-This is commonly used with images
 
+This is commonly used with images
+```
 html.Div(
     html.Div("max height 100%", className="mh-100 bg-info", style={"width": 100, "height": 200}),
     style={"height": 100},
@@ -268,9 +268,9 @@ mh_100_preview = html.Div(
 )
 
 viewport_code = """
-```
-Click full screen button  or scroll down to see preview
 
+Click full screen button  or scroll down to see preview
+```
 html.Div("Min-width 100vw", className="min-vw-100 bg-light mb-3 border")
 html.Div("Min-height 100vh", className="min-vh-100 bg-light mb-3 border")
 html.Div("Width 100vw", className="vw-100 bg-light mb-3 border")
@@ -307,15 +307,35 @@ utility_misc = dbc.Card(
         ),
         dbc.ListGroup(
             [
-                make_listgroup_item("user-select-{option}", "how content is selected {all|auto|none}"),
-                make_listgroup_item("pe-{option} (pointer)","whether links can be clicked"),
-                make_listgroup_item("overflow-{option}", "how content overflows an element {auto|hidden|visible|scroll}"),
-                make_listgroup_item("shadow/shadow-{option}", "box shadows {none|sm|lg}"),
-                make_listgroup_item("w-{option}", "width relative to parent {25|50|75|100|auto}"),
-                make_listgroup_item("h-{option}", "height relative to parent {25|50|75|100|auto}"),
-                make_listgroup_item("mw-100", "max width relative to parent {25|50|75|100|auto}"),
-                make_listgroup_item("mh-100", "max height relative to parent {25|50|75|100|auto}"),
-                make_listgroup_item("viewport", "relative to the viewport {min-vw-100|min-vh-100|vw-100|vh-100}"),
+                make_listgroup_item(
+                    "user-select-{option}", "how content is selected {all|auto|none}"
+                ),
+                make_listgroup_item(
+                    "pe-{option} (pointer)", "whether links can be clicked"
+                ),
+                make_listgroup_item(
+                    "overflow-{option}",
+                    "how content overflows an element {auto|hidden|visible|scroll}",
+                ),
+                make_listgroup_item(
+                    "shadow-{option}", "box shadows {none|sm|lg}"
+                ),
+                make_listgroup_item(
+                    "w-{option}", "width relative to parent {25|50|75|100|auto}"
+                ),
+                make_listgroup_item(
+                    "h-{option}", "height relative to parent {25|50|75|100|auto}"
+                ),
+                make_listgroup_item(
+                    "mw-100", "max width relative to parent {25|50|75|100|auto}"
+                ),
+                make_listgroup_item(
+                    "mh-100", "max height relative to parent {25|50|75|100|auto}"
+                ),
+                make_listgroup_item(
+                    "viewport",
+                    "relative to the viewport {min-vw-100|min-vh-100|vw-100|vh-100}",
+                ),
                 make_listgroup_item("visible/invisible"),
             ],
             flush=True,

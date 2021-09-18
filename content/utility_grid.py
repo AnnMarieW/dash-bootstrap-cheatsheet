@@ -9,33 +9,33 @@ import dash_bootstrap_components as dbc
 from utilities import make_link, make_listgroup_item, dbc_url
 
 
-def make_row(className):
+def make_row(example_class_name):
     return dbc.Row(
         [
-            dbc.Col(html.Div(className, className="bg-light")),
-            dbc.Col(html.Div(className, className="bg-light")),
-            dbc.Col(html.Div(className, className="bg-light")),
+            dbc.Col(html.Div(example_class_name, className="bg-light")),
+            dbc.Col(html.Div(example_class_name, className="bg-light")),
+            dbc.Col(html.Div(example_class_name, className="bg-light")),
         ],
-        className=className + " my-2 border border-danger",
+        className=example_class_name + " my-2 border border-danger",
     )
 
 
 gx_size_code = """
-```
+
 Note: To help show the spacing:     
     - The Container has className="bg-secondary"
     - Each Row also has className=" my-2 border border-danger"
     - The Col content has className="bg-light"
  
-
-def make_row(className):
+```
+def make_row(example_class_name):
     return dbc.Row(
         [
-            dbc.Col(html.Div(className, className="bg-light")),
-            dbc.Col(html.Div(className, className="bg-light")),
-            dbc.Col(html.Div(className, className="bg-light")),
+            dbc.Col(html.Div(example_class_name, className="bg-light")),
+            dbc.Col(html.Div(example_class_name, className="bg-light")),
+            dbc.Col(html.Div(example_class_name, className="bg-light")),
         ],
-        className=className + " my-2 border border-danger",
+        className=example_class_name + " my-2 border border-danger",
     )
     
 gx_size_preview = dbc.Container(
@@ -68,21 +68,21 @@ gx_size_preview = dbc.Container(
 )
 
 gy_size_code = """
-```
+
 Note: To help show the spacing:     
     - The Container has className="bg-secondary"
     - Each Row also has className=" my-2 border border-danger"
     - The Col content has className="bg-light"
 
-
-def make_row(className):
+```
+def make_row(example_class_name):
     return dbc.Row(
         [
-            dbc.Col(html.Div(className, className="bg-light")),
-            dbc.Col(html.Div(className, className="bg-light")),
-            dbc.Col(html.Div(className, className="bg-light")),
+            dbc.Col(html.Div(example_class_name, className="bg-light")),
+            dbc.Col(html.Div(example_class_name, className="bg-light")),
+            dbc.Col(html.Div(example_class_name, className="bg-light")),
         ],
-        className=className + " my-2 border border-danger",
+        className=example_class_name + " my-2 border border-danger",
     )
 
 gy_size_preview = dbc.Container(
@@ -115,21 +115,21 @@ gy_size_preview = dbc.Container(
 )
 
 g_size_code = """
-```
+
 Note: To help show the spacing:     
     - The Container has className="bg-secondary"
     - Each Row also has className=" my-2 border border-danger"
     - The Col content has className="bg-light"
+```
 
-
-def make_row(className):
+def make_row(example_class_name):
     return dbc.Row(
         [
-            dbc.Col(html.Div(className, className="bg-light")),
-            dbc.Col(html.Div(className, className="bg-light")),
-            dbc.Col(html.Div(className, className="bg-light")),
+            dbc.Col(html.Div(example_class_name, className="bg-light")),
+            dbc.Col(html.Div(example_class_name, className="bg-light")),
+            dbc.Col(html.Div(example_class_name, className="bg-light")),
         ],
-        className=className + " my-2 border border-danger",
+        className=example_class_name + " my-2 border border-danger",
     )
 
 g_size_preview = dbc.Container(
@@ -162,10 +162,10 @@ g_size_preview = dbc.Container(
 )
 
 gx_dev_size_code = """
-```
+
 Gutters can be used for responsive cases with the help of 
 gx-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5} 
-
+```
 gx_dev_size_preview = dbc.Container(
     [
         html.H5("Change the screen size to see how the gutters change"),
@@ -197,10 +197,10 @@ gx_dev_size_preview = dbc.Container(
 
 
 gy_dev_size_code = """
-```
+
 Gutters can be used for responsive cases with the help of 
 gy-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5} 
-
+```
 gy_dev_size_preview = dbc.Container(
     [
         html.H5("Change the screen size to see how the gutters change"),
@@ -232,10 +232,10 @@ gy_dev_size_preview = dbc.Container(
 
 
 g_dev_size_code = """
-```
+
 Gutters can be used for responsive cases with the help of 
 g-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5} 
-
+```
 g_dev_size_preview = dbc.Container(
     [
         html.H5("Change the screen size to see how the gutters change"),
@@ -284,7 +284,9 @@ utility_grid = dbc.Card(
                 make_listgroup_item("gy-{size}", "Gutter vertical"),
                 make_listgroup_item("gy-*-{size}", "Gutter vertical w breakpoints"),
                 make_listgroup_item("g-{size}", "Gutter horizontal & vertical"),
-                make_listgroup_item("g-*-{size}", "Gutter horizontal & vertical w breakpoints"),
+                make_listgroup_item(
+                    "g-*-{size}", "Gutter horizontal & vertical w breakpoints"
+                ),
             ],
             flush=True,
             className="border-0",

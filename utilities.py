@@ -35,6 +35,7 @@ new_items = [
     "text-opacity-{value}",
     "pe-{option} (pointer)",
     "overflow-{option}",
+    "Migration Guide",
     "Icons",
     "Accordion",
     "Breadcrumb",
@@ -105,13 +106,16 @@ def make_offcanvas(idx):
 
 def make_listgroup_item(idx, tooltip=None):
     listgroup_item = dbc.ListGroupItem(
-        idx, id={"type": "list-item", "index": idx}, n_clicks=0, className="border-0",
+        idx,
+        id={"type": "list-item", "index": idx},
+        n_clicks=0,
+        className="border-0 text-nowrap",
     )
     add_tooltip = dbc.Tooltip(
         tooltip,
         id={"type": "tooltip", "index": idx},
         target={"type": "list-item", "index": idx},
-        #placement="auto-end",
+        # placement="auto-end",
     )
     if tooltip:
         return html.Div([listgroup_item, add_tooltip, make_offcanvas(idx)])

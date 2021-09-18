@@ -10,11 +10,11 @@ from utilities import make_link, make_listgroup_item
 
 
 float_code = """
-```
+
 float can be used for responsive cases with the help of 
 float-{sm|md|lg|xl|xxl}-{start|end|none}
 For example float-sm-start
-
+```
 html.Div("Float start on all viewport sizes", className="float-start")
 html.Br()
 html.Div("Float end on all viewport sizes", className="float-end")
@@ -35,9 +35,9 @@ float_preview = html.Div(
 
 
 position_code = """
-```
-These positioning classes are not responsive.
 
+These positioning classes are not responsive.
+```
 html.Div("position-static", className="position-static")
 html.Div("position-relative", className="position-relative")
 html.Div("position-absolute", className="position-absolute")
@@ -206,10 +206,10 @@ align_preview = html.Div(
 )
 
 vstack_code = """
-```
+
 See more on Stacks in the Bootstrap docs:
 https://getbootstrap.com/docs/5.1/helpers/stacks/
-
+```
 vstack_preview = html.Div(
     [
         html.Div("First Item", className="bg-light border"),
@@ -232,10 +232,10 @@ vstack_preview = html.Div(
 
 
 hstack_code = """
-```
+
 See more on Stacks in the Bootstrap docs:
 https://getbootstrap.com/docs/5.1/helpers/stacks/
-
+```
 hstack_preview = html.Div(
     [
         html.Div("First Item", className="bg-light border"),
@@ -258,10 +258,10 @@ hstack_preview = html.Div(
 
 
 vr_code = """
-```
+
 See more on Vertical Rule in Official Bootstrap docs:
 https://getbootstrap.com/docs/5.1/helpers/vertical-rule/
-
+```
 vr_preview = html.Div(
     [
         html.Div("First Item", className="bg-light border"),
@@ -294,12 +294,27 @@ utility_position = dbc.Card(
         ),
         dbc.ListGroup(
             [
-                make_listgroup_item("float-*-{option}", "float with breakpoints {sm|md|lg|xl|xxl} to {start|end|none}"),
-                make_listgroup_item("position-{option}", ),
-                make_listgroup_item("{direction}-{position}", "arrange elements {top|start|bottom|end} and edge position {0|50|100}"),
-                make_listgroup_item("translate-middle", "centers elements - use with position and direction"),
-                make_listgroup_item("translate-middle-{direction}", "centers element only in horizontal or vertical direction {x|y}"),
-                make_listgroup_item("align-{option}", "align inline elements {baseline|top|middle|bottom|text-bottom|text-top}"),
+                make_listgroup_item(
+                    "float-*-{option}",
+                    "float with breakpoints {sm|md|lg|xl|xxl} to {start|end|none}",
+                ),
+                make_listgroup_item("position-{option}",),
+                make_listgroup_item(
+                    "{direction}-{position}",
+                    "arrange elements {top|start|bottom|end} and edge position {0|50|100}",
+                ),
+                make_listgroup_item(
+                    "translate-middle",
+                    "centers elements - use with position and direction",
+                ),
+                make_listgroup_item(
+                    "translate-middle-{direction}",
+                    "centers element only in horizontal or vertical direction {x|y}",
+                ),
+                make_listgroup_item(
+                    "align-{option}",
+                    "align inline elements {baseline|top|middle|bottom|text-bottom|text-top}",
+                ),
                 make_listgroup_item("vstack", "stack items vertically"),
                 make_listgroup_item("hstack", "stack items horizontally"),
                 make_listgroup_item("vr (vertical rule)", "creates a vertical divider"),

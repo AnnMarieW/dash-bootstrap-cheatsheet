@@ -105,7 +105,7 @@ examples = {
     "user-select-{option}": [user_select_code, user_select_preview],
     "pe-{option} (pointer)": [pointer_code, pointer_preview],
     "overflow-{option}": [overflow_code, overflow_preview],
-    "shadow/shadow-{option}": [shadow_code, shadow_preview],
+    "shadow-{option}": [shadow_code, shadow_preview],
     "w-{option}": [w_option_code, w_option_preview],
     "h-{option}": [h_option_code, h_option_preview],
     "mw-100": [mw_100_code, mw_100_preview],
@@ -114,10 +114,10 @@ examples = {
     "visible/invisible": [visible_code, visible_preview],
     #
     # Utility flex examples
-    #"flex-*-row": [flex_row_code, flex_row_preview],
-    #"flex-*-row-reverse": [flex_row_reverse_code, flex_row_reverse_preview],
-    #"flex-*-column": [flex_column_code, flex_column_preview],
-    #"flex-*-column-reverse": [flex_column_reverse_code, flex_column_reverse_preview],
+    # "flex-*-row": [flex_row_code, flex_row_preview],
+    # "flex-*-row-reverse": [flex_row_reverse_code, flex_row_reverse_preview],
+    # "flex-*-column": [flex_column_code, flex_column_preview],
+    # "flex-*-column-reverse": [flex_column_reverse_code, flex_column_reverse_preview],
     "justify-content-*-{option}": [justify_content_code, justify_content_preview],
     "align-items-*-{option}": [align_items_code, align_items_preview],
     "align-self-*-{option}": [align_self_code, align_self_preview],
@@ -127,8 +127,8 @@ examples = {
     "flex-*-nowrap": [flex_nowrap_code, flex_nowrap_preview],
     "flex-*-wrap": [flex_wrap_code, flex_wrap_preview],
     "flex-*-wrap-reverse": [flex_wrap_reverse_code, flex_wrap_reverse_preview],
-    "order-*-{order-number}": [order_number_code, order_number_preview],
-    "order-*-{order-name}": [order_name_code, order_name_preview],
+    "order-*-{number}": [order_number_code, order_number_preview],
+    "order-*-{name}": [order_name_code, order_name_preview],
     "align-content-*-{option}": [align_content_code, align_content_preview],
     #
     # Utilites Grid examples
