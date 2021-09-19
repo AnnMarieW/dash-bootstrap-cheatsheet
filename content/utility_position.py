@@ -11,7 +11,7 @@ from utilities import make_link, make_listgroup_item
 
 float_code = """
 
-float can be used for responsive cases with the help of 
+Make responsive layouts with breakpoints at device or viewport sizes:
 float-{sm|md|lg|xl|xxl}-{start|end|none}
 For example float-sm-start
 ```

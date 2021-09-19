@@ -19,7 +19,7 @@ new_items = [
     "g-{size}",
     "g-*-{size}",
     "justify-content-*-{option}",
-    "order-*-{order-name}",
+   # "order-*-{order-name}",
     "gap-*-{size}",
     "{direction}-{position}",
     "translate-middle-{direction}",

@@ -11,8 +11,8 @@ from utilities import make_link, make_listgroup_item
 
 flex_row_code = """
 
-Display flex can be used for responsive cases as well with the help of 
-flex-{sm|md|lg|xl|xxl}-row
+Make responsive layouts with breakpoints at device or viewport sizes:    
+flex-{sm|md|lg|xl|xxl}-row  
 example:  "flex-sm-row"
 ```
 html.Div(
@@ -38,8 +38,8 @@ flex_row_preview = html.Div(
 
 flex_row_reverse_code = """
 
-Display flex can be used for responsive cases as well with the help of 
-flex-{sm|md|lg|xl|xxl}-row-reverse
+Make responsive layouts with breakpoints at device or viewport sizes:  
+flex-{sm|md|lg|xl|xxl}-row-reverse  
 example:  "flex-sm-row-reverse"
 ```
 html.Div(
@@ -65,8 +65,8 @@ flex_row_reverse_preview = html.Div(
 
 flex_column_code = """
 
-Display flex can be used for responsive cases as well with the help of 
-flex-{sm|md|lg|xl|xxl}-column
+Make responsive layouts with breakpoints at device or viewport sizes:  
+flex-{sm|md|lg|xl|xxl}-column  
 example:  "flex-sm-column"
 ```
 html.Div(
@@ -91,8 +91,8 @@ flex_column_preview = html.Div(
 
 flex_column_reverse_code = """
 
-Display flex can be used for responsive cases as well with the help of 
-flex-{sm|md|lg|xl|xxl}-column-reverse
+Make responsive layouts with breakpoints at device or viewport sizes:  
+flex-{sm|md|lg|xl|xxl}-column-reverse  
 example:  "flex-sm-column-reverse"
 ```
 html.Div(
@@ -118,8 +118,8 @@ flex_column_reverse_preview = html.Div(
 
 justify_content_code = """
 
-justify-content can be used for responsive cases as well with the help of 
-justify-content-{sm|md|lg|xl|xxl}-{start|end|center|between|around|evenly}
+Make responsive layouts with breakpoints at device or viewport sizes:  
+justify-content-{sm|md|lg|xl|xxl}-{start|end|center|between|around|evenly}    
 example:  "justify-content-sm-start"
 ```
 flex_items = [
@@ -172,8 +172,8 @@ justify_content_preview = html.Div(
 
 align_items_code = """
 
-align-items can be used for responsive cases as well with the help of 
-align-items-{sm|md|lg|xl|xxl}-{start|end|center|baseline|stretch}
+Make responsive layouts with breakpoints at device or viewport sizes:  
+align-items-{sm|md|lg|xl|xxl}-{start|end|center|baseline|stretch}  
 example:  "align-items-sm-start"
 ```
 flex_items = [
@@ -226,8 +226,8 @@ align_items_preview = html.Div(
 
 align_self_code = """
 
-align-self can be used for responsive cases as well with the help of
-align-self-{sm|md|lg|xl|xxl}-{start|end|center|baseline|stretch}
+Make responsive layouts with breakpoints at device or viewport sizes:  
+align-self-{sm|md|lg|xl|xxl}-{start|end|center|baseline|stretch}  
 ```
 def make_flex_align_items(example_class_name):
     return html.Div(
@@ -281,8 +281,8 @@ align_self_preview = html.Div(
 
 flex_fill_code = """
 
-flex-fill can be used for responsive cases as well with the help of
-flex-{sm|md|lg|xl|xxl}-fill
+Make responsive layouts with breakpoints at device or viewport sizes:  
+flex-{sm|md|lg|xl|xxl}-fill  
 ```
 flex_fill_preview = html.Div(
     [
@@ -308,8 +308,8 @@ flex_fill_preview = html.Div(
 )
 flex_grow_code = """
 
-flex-grow can be used for responsive cases as well with the help of
-flex-{sm|md|lg|xl|xxl}-grow-{0|1}
+Make responsive layouts with breakpoints at device or viewport sizes:  
+flex-{sm|md|lg|xl|xxl}-grow-{0|1}  
 ```
 flex_grow_preview = html.Div(
     [
@@ -332,8 +332,8 @@ flex_grow_preview = html.Div(
 
 flex_shrink_code = """
 
-flex-shrink can be used for responsive cases as well with the help of
-flex-{sm|md|lg|xl|xxl}-shrink-{0|1}
+Make responsive layouts with breakpoints at device or viewport sizes:  
+flex-{sm|md|lg|xl|xxl}-shrink-{0|1}  
 ```
 flex_shrink_preview = html.Div(
     [
@@ -354,8 +354,8 @@ flex_shrink_preview = html.Div(
 
 flex_nowrap_code = """
 
-flex-nowrap can be used for responsive cases as well with the help of 
-flex-{sm|md|lg|xl|xxl}-nowrap
+Make responsive layouts with breakpoints at device or viewport sizes:  
+flex-{sm|md|lg|xl|xxl}-nowrap  
 ```
 html.Div(
     [
@@ -383,7 +383,7 @@ flex_nowrap_preview = html.Div(
 
 flex_wrap_code = """
 
-flex-wrap can be used for responsive cases as well with the help of
+Make responsive layouts with breakpoints at device or viewport sizes:  
 flex-{sm|md|lg|xl|xxl}-wrap
 
 ```
@@ -401,7 +401,7 @@ flex_wrap_preview = html.Div(
 
 flex_wrap_reverse_code = """
 
-flex-wrap-reverse can be used for responsive cases as well with the help of
+Make responsive layouts with breakpoints at device or viewport sizes:  
 flex-reverse-{sm|md|lg|xl|xxl}-wrap
 ```
 html.Div(
@@ -417,7 +417,7 @@ flex_wrap_reverse_preview = html.Div(
 
 order_number_code = """
 
-order can be used for responsive cases as well with the help of
+Make responsive layouts with breakpoints at device or viewport sizes:  
 order-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5} 
 ```
 order_number_preview = html.Div(
@@ -440,7 +440,7 @@ order_number_preview = html.Div(
 
 order_name_code = """
 
-order can be used for responsive cases as well with the help of
+Make responsive layouts with breakpoints at device or viewport sizes:  
 order-{sm|md|lg|xl|xxl}-{first|last} 
 ```
 html.Div(
@@ -466,7 +466,7 @@ order_name_preview = html.Div(
 
 align_content_code = """
 
-align-content can be used for responsive cases as well with the help of
+Make responsive layouts with breakpoints at device or viewport sizes:  
 align-content-{sm|md|lg|xl|xxl}-{start|end|center|around|stretch} 
 ```
 html.Div(

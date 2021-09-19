@@ -13,8 +13,8 @@ from utilities import make_link, make_listgroup_item
 
 m_code = """
 
-Margin can be used for responsive cases with the help of options:
-m-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}
+Make responsive layouts with breakpoints at device or viewport sizes:  
+m-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}    
 for example: "m-sm-2"
 ```
 html.Div(
@@ -47,8 +47,8 @@ m_preview = html.Div(
 
 mt_code = """
 
-Margin can be used for responsive cases with the help of options:
-m-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}
+Make responsive layouts with breakpoints at device or viewport sizes:  
+m-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}  
 for example: "m-sm-2"
 ```
 html.Div(
@@ -81,8 +81,8 @@ mt_preview = html.Div(
 
 me_code = """
 
-Margin can be used for responsive cases with the help of options:
-m-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}
+Make responsive layouts with breakpoints at device or viewport sizes:  
+m-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}  
 for example: "m-sm-2"
 ```
 html.Div(
@@ -115,8 +115,8 @@ me_preview = html.Div(
 
 mb_code = """
 
-Margin can be used for responsive cases with the help of options:
-m-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}
+Make responsive layouts with breakpoints at device or viewport sizes:  
+m-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}  
 for example: "m-sm-2"
 ```
 html.Div(
@@ -148,8 +148,8 @@ mb_preview = html.Div(
 
 ms_code = """
 
-Margin can be used for responsive cases with the help of options:
-m-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}
+Make responsive layouts with breakpoints at device or viewport sizes:  
+m-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}  
 for example: "m-sm-2"
 ```
 html.Div(
@@ -182,8 +182,8 @@ ms_preview = html.Div(
 
 mx_code = """
 
-Margin can be used for responsive cases with the help of options:
-m-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}
+Make responsive layouts with breakpoints at device or viewport sizes:  
+m-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}  
 for example: "m-sm-2"
 ```
 html.Div(
@@ -216,8 +216,8 @@ mx_preview = html.Div(
 
 my_code = """
 
-Margin can be used for responsive cases with the help of options:
-m-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}
+Make responsive layouts with breakpoints at device or viewport sizes:  
+m-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}  
 for example: "m-sm-2"
 ```
 html.Div(
@@ -250,8 +250,8 @@ my_preview = html.Div(
 
 p_code = """
 
-Padding can be used for responsive cases with the help of options:
-p-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}
+Make responsive layouts with breakpoints at device or viewport sizes:  
+p-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}  
 for example: "p-sm-2"
 ```
 html.Div(
@@ -284,8 +284,8 @@ p_preview = html.Div(
 
 pt_code = """
 
-Padding can be used for responsive cases with the help of options:
-pt-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}
+Make responsive layouts with breakpoints at device or viewport sizes:  
+pt-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}  
 for example: "pt-sm-2"
 ```
 html.Div(
@@ -318,8 +318,8 @@ pt_preview = html.Div(
 
 pe_code = """
 
-Padding can be used for responsive cases with the help of options:
-pe-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}
+Make responsive layouts with breakpoints at device or viewport sizes:
+pe-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}  
 for example: "pe-sm-2"
 ```
 html.Div(
@@ -352,8 +352,8 @@ pe_preview = html.Div(
 
 pb_code = """
 
-Padding can be used for responsive cases with the help of options:
-pb-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}
+Make responsive layouts with breakpoints at device or viewport sizes:
+pb-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}  
 for example: "pb-sm-2"
 ```
 html.Div(
@@ -385,8 +385,8 @@ pb_preview = html.Div(
 
 ps_code = """
 
-Padding can be used for responsive cases with the help of options:
-ps-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}
+Make responsive layouts with breakpoints at device or viewport sizes:  
+ps-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}  
 for example: "ps-sm-2"
 ```
 html.Div(
@@ -419,8 +419,8 @@ ps_preview = html.Div(
 
 px_code = """
 
-Padding can be used for responsive cases with the help of options:
-px-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}
+Make responsive layouts with breakpoints at device or viewport sizes:  
+px-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}  
 for example: "px-sm-2"
 ```
 
@@ -454,8 +454,8 @@ px_preview = html.Div(
 
 py_code = """
 
-Padding can be used for responsive cases with the help of options:
-py-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}
+Make responsive layouts with breakpoints at device or viewport sizes:  
+py-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}  
 for example: "py-sm-2"
 ```
 html.Div(
@@ -488,8 +488,8 @@ py_preview = html.Div(
 
 gap_code = """
 
-Gap can be used for responsive cases with the help of 
-gap-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5} 
+Make responsive layouts with breakpoints at device or viewport sizes:  
+gap-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5}     
 for example: "gap-sm-0"
 ```
 html.Div(
