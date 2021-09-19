@@ -5,11 +5,11 @@ made with the latest version of *dash-bootstrap-components* V1.0
 
 ## See it live at https://dashcheatsheet.pythonanywhere.com/
 
-## Note - this is a WIP - if you have any comments or suggestions or just want to give some :heart: Please open an issue on this page.
+## Note - this is a WIP - if you have any comments or suggestions or just want to give some :heart: Please open an issue.
 
 ### TODO
 
- -[] Add tooltips for each class  
+ -[x] Add tooltips for each class  
  -[] Add more real world examples, rather than just the Bootstrap examples  
  -[] Add image helper classes  
  -[] Check for broken links and bugs  

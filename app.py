@@ -23,14 +23,15 @@ from content.utility_spacing import utility_spacing
 from content.utility_opacity import utility_opacity
 from content.utility_position import utility_position
 from content.utility_text import utility_text
-from content.utility_misc import utility_misc
+from content.misc_helpers import misc_helpers
 from content.utility_flex import utility_flex
 from content.utility_grid import utility_grid
 from content.dbc_components import dbc_components1, dbc_components2
 from content.plotly_components import plotly_links
+from content.about import about
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.SPACELAB, dbc.icons.BOOTSTRAP])
-app.title ="Cheatsheet"
+app.title = "Cheatsheet"
 dbc_logo = "https://user-images.githubusercontent.com/72614349/133677816-5ea52424-bfd3-4405-9ccf-8ad0dbd18020.png"
 bootstrap_logo = "https://user-images.githubusercontent.com/72614349/133683669-eef08b42-2eff-49df-b0a5-33a7754a2b86.png"
 
@@ -39,7 +40,7 @@ header = html.Div(
         [
             html.H1("Dash Bootstrap Cheatsheet", className="display-3 text-white",),
             html.P(
-                "A guide for using Bootstrap 5 Utility classes in Dash Bootstrap Components V1",
+                "A guide for using Bootstrap 5 classes in Dash Bootstrap Components V1",
                 className="fst-italic lead",
             ),
             html.Div(
@@ -87,17 +88,17 @@ app.layout = dbc.Container(
                 dbc.Col(utility_border),
                 dbc.Col(utility_color),
                 dbc.Col(utility_display),
-                dbc.Col(utility_misc),
                 dbc.Col(utility_opacity),
                 dbc.Col(utility_position),
                 dbc.Col(utility_spacing),
                 dbc.Col(utility_text),
+                dbc.Col(misc_helpers),
                 dbc.Col(dbc_components1),
                 dbc.Col(dbc_components2),
                 dbc.Col(plotly_links),
+                dbc.Col(about),
             ]
         ),
-        html.Div(id="dummy"),
     ],
     fluid=True,
 )

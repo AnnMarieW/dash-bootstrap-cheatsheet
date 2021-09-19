@@ -23,12 +23,12 @@ urls1 = {
     "DropdownMenu": f"{dbc_url}dropdownmenu",
     "Fade": f"{dbc_url}fade",
     "Form": f"{dbc_url}form",
-    "Input": f"{dbc_url}input",
-    "InputGroup": f"{dbc_url}inputgroup",
 }
 
 
 urls2 = {
+    "Input": f"{dbc_url}input",
+    "InputGroup": f"{dbc_url}inputgroup",
     "Jumbotron": f"{dbc_url}jumbotron",
     "Layout": f"{dbc_url}layout",
     "ListGroup": f"{dbc_url}listgroup",
@@ -52,7 +52,7 @@ dbc_components1 = dbc.Card(
         dbc.CardHeader(
             [
                 html.H3("Dash Bootstrap Components"),
-                html.Div("Card: A-I"),
+                html.Div("Card: A-F"),
                 make_link(dbc_home_url),
             ],
             className="hstack gap-4",
@@ -73,7 +73,7 @@ dbc_components2 = dbc.Card(
         dbc.CardHeader(
             [
                 html.H3("Dash Bootstrap Components"),
-                html.Div("Card: J-Z"),
+                html.Div("Card: I-Z"),
                 make_link(dbc_home_url),
             ],
             className="hstack gap-4",

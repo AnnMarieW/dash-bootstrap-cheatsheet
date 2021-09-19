@@ -87,7 +87,7 @@ direction_position_preview = html.Div(
 
 translate_middle_code = """
 ```
-html.Div(
+demo = html.Div(
     [
         html.Div(className="position-absolute top-0 start-0 translate-middle"),
         html.Div(className="position-absolute top-0 start-50 translate-middle"),
@@ -101,9 +101,24 @@ html.Div(
     ],
     className="position-relative"
 )
+
+badge = dbc.Button(
+    [
+        "Notifications",
+        dbc.Badge(
+            "99+",
+            color="danger",
+            pill=True,
+            text_color="white",
+            className="position-absolute top-0 start-100 translate-middle",
+        ),
+    ],
+    color="primary",
+    className="position-relative",
+)
 ```"""
 
-translate_middle_preview = html.Div(
+demo = html.Div(
     [
         html.Div(
             className="position-absolute top-0 start-0 translate-middle sm-square"
@@ -137,6 +152,24 @@ translate_middle_preview = html.Div(
     style={"height": 175},
 )
 
+badge = html.Div(
+    dbc.Button(
+        [
+            "Notifications",
+            dbc.Badge(
+                "99+",
+                color="danger",
+                pill=True,
+                text_color="white",
+                className="position-absolute top-0 start-100 translate-middle",
+            ),
+        ],
+        color="primary",
+        className="position-relative mt-5",
+    )
+)
+
+translate_middle_preview = html.Div([demo, badge])
 
 translate_middle_direction_code = """
 ```

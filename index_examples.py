@@ -12,7 +12,7 @@ from content.utility_spacing import *
 from content.utility_opacity import *
 from content.utility_position import *
 from content.utility_text import *
-from content.utility_misc import *
+from content.misc_helpers import *
 from content.utility_flex import *
 from content.utility_grid import *
 
@@ -112,6 +112,12 @@ examples = {
     "mh-100": [mh_100_code, mh_100_preview],
     "viewport": [viewport_code, viewport_preview],
     "visible/invisible": [visible_code, visible_preview],
+    "fixed-top": [fixed_top_code, fixed_top_preview],
+    "fixed-bottom": [fixed_bottom_code, fixed_bottom_preview],
+    "sticky-*-top": [sticky_top_code, sticky_top_preview],
+    "img-fluid": [img_fluid_code, img_fluid_preview],
+    "img-thumbnail": [img_thumbnail_code, img_thumbnail_preview],
+    # "ratio": [ratio_code, ratio_preview],
     #
     # Utility flex examples
     # "flex-*-row": [flex_row_code, flex_row_preview],

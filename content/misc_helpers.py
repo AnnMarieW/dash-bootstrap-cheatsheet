@@ -1,7 +1,7 @@
 """
 This is the card and content of the code snippets and preview content for
 
-Utility:Misc
+Misc & Helpers
 """
 
 from dash import html
@@ -296,11 +296,75 @@ visible_preview = html.Div(
     [html.Div("...", className="visible"), html.Div("...", className="invisible")]
 )
 
-utility_misc = dbc.Card(
+fixed_bottom_code = """
+```
+html.Div("fixed bottom", className="fixed-bottom bg-primary text-white")
+```"""
+
+fixed_bottom_preview = html.Div(
+    [
+        "See bottom of the screen",
+        html.Div("fixed bottom", className="fixed-bottom bg-primary text-white"),
+    ]
+)
+
+
+fixed_top_code = """
+```
+html.Div("fixed top", className="fixed-top bg-primary text-white")
+```"""
+
+fixed_top_preview = html.Div(
+    [
+        "Look at top of screen",
+        html.Div("fixed top", className="fixed-top bg-primary text-white"),
+    ]
+)
+
+
+sticky_top_code = """
+Position an element at the top of the viewport, but only after you scroll past it.
+Not supported in all browsers
+Make responsive layouts by setting different gutters at breakpoints for device or viewport sizes:     
+sticky-{sm|md|lg|xl|xxl}-top
+
+```
+html.Div("sticky top", className="sticky-top bg-primary text-white")
+```"""
+
+sticky_top_preview = html.Div(
+    "sticky top", className="sticky-top bg-primary text-white"
+)
+
+
+img_fluid_code = """
+```
+html.Img(src=..., className="img-fluid"
+```"""
+
+img = "https://user-images.githubusercontent.com/72614349/133930947-1c95d44e-a6a5-44fd-a66d-258baddb44a4.png"
+
+img_fluid_preview = html.Div(
+    [
+        "Change the screen size to see that the image scales in parent container",
+        html.Img(src=img, className="img-fluid"),
+    ]
+)
+
+img_thumbnail_code = """
+```
+html.Div(html.Img(src=..., className="img-thumbnail"
+```"""
+img_thumbnail_preview = html.Img(src=img, className="img-thumbnail img-fluid")
+
+
+# ----------------------------------------------------------
+
+misc_helpers = dbc.Card(
     [
         dbc.CardHeader(
             [
-                html.H3("Utility: Misc"),
+                html.H3("Misc & Helpers"),
                 make_link("https://getbootstrap.com/docs/5.1/utilities/interactions/"),
             ],
             className="hstack gap-4",
@@ -317,9 +381,7 @@ utility_misc = dbc.Card(
                     "overflow-{option}",
                     "how content overflows an element {auto|hidden|visible|scroll}",
                 ),
-                make_listgroup_item(
-                    "shadow-{option}", "box shadows {none|sm|lg}"
-                ),
+                make_listgroup_item("shadow-{option}", "box shadows {none|sm|lg}"),
                 make_listgroup_item(
                     "w-{option}", "width relative to parent {25|50|75|100|auto}"
                 ),
@@ -337,6 +399,17 @@ utility_misc = dbc.Card(
                     "relative to the viewport {min-vw-100|min-vh-100|vw-100|vh-100}",
                 ),
                 make_listgroup_item("visible/invisible"),
+                make_listgroup_item("fixed-top", "element fixed to top of viewport",),
+                make_listgroup_item(
+                    "fixed-bottom", "element fixed to bottom of viewport",
+                ),
+                make_listgroup_item(
+                    "sticky-*-top",
+                    "fixed to top of viewport but only after scrolling past it",
+                ),
+                make_listgroup_item("img-fluid", "scale image with screen size"),
+                make_listgroup_item("img-thumbnail", "Add frame to image"),
+                #  make_listgroup_item("ratio", "set aspect ratio")
             ],
             flush=True,
             className="border-0",

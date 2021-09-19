@@ -23,9 +23,9 @@ def make_row(example_class_name):
 gx_size_code = """
 
 Note: To help show the spacing:     
-    - The Container has className="bg-secondary"
-    - Each Row also has className=" my-2 border border-danger"
-    - The Col content has className="bg-light"
+- The `Container` has `className="bg-secondary"`   
+- Each `Row` also has `className=" my-2 border border-danger"`   
+- The `Col` content has `className="bg-light"`
  
 ```
 def make_row(example_class_name):
@@ -68,12 +68,11 @@ gx_size_preview = dbc.Container(
 )
 
 gy_size_code = """
-
 Note: To help show the spacing:     
-    - The Container has className="bg-secondary"
-    - Each Row also has className=" my-2 border border-danger"
-    - The Col content has className="bg-light"
-
+- The `Container` has `className="bg-secondary"`   
+- Each `Row` also has `className=" my-2 border border-danger"`   
+- The `Col` content has `className="bg-light"`
+ 
 ```
 def make_row(example_class_name):
     return dbc.Row(
@@ -115,11 +114,11 @@ gy_size_preview = dbc.Container(
 )
 
 g_size_code = """
-
 Note: To help show the spacing:     
-    - The Container has className="bg-secondary"
-    - Each Row also has className=" my-2 border border-danger"
-    - The Col content has className="bg-light"
+- The `Container` has `className="bg-secondary"`   
+- Each `Row` also has `className=" my-2 border border-danger"`   
+- The `Col` content has `className="bg-light"`
+ 
 ```
 
 def make_row(example_class_name):
@@ -163,7 +162,7 @@ g_size_preview = dbc.Container(
 
 gx_dev_size_code = """
 
-Make responsive layouts by setting different gutters at breakpoints for device or viewport sizes:  
+Make responsive layouts by setting different gutters at breakpoints for device or viewport sizes:     
 gx-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5} 
 ```
 gx_dev_size_preview = dbc.Container(
@@ -198,7 +197,7 @@ gx_dev_size_preview = dbc.Container(
 
 gy_dev_size_code = """
 
-Make responsive layouts by setting different gutters at breakpoints for device or viewport sizes:
+Make responsive layouts by setting different gutters at breakpoints for device or viewport sizes:  
 gy-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5} 
 ```
 gy_dev_size_preview = dbc.Container(
@@ -233,7 +232,7 @@ gy_dev_size_preview = dbc.Container(
 
 g_dev_size_code = """
 
-Make responsive layouts by setting different gutters at breakpoints for device or viewport sizes:
+Make responsive layouts by setting different gutters at breakpoints for device or viewport sizes:  
 g-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5} 
 ```
 g_dev_size_preview = dbc.Container(
