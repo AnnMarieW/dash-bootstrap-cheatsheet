@@ -137,8 +137,12 @@ html.P("bg-primary bg-gradient", className="bg-primary bg-gradient text-white")
 
 bg_gradient_preview = html.Div(
     [
-        html.P("bg-primary", className="bg-primary text-white"),
-        html.P("bg-primary bg-gradient", className="bg-primary bg-gradient text-white"),
+        html.P("bg-primary", className="bg-primary text-white", style={"height": 100}),
+        html.P(
+            "bg-primary bg-gradient",
+            className="bg-primary bg-gradient text-white",
+            style={"height": 100},
+        ),
     ]
 )
 

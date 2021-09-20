@@ -141,7 +141,7 @@ def make_link(url):
             html.A(
                 className="bi bi-box-arrow-up-right h4",
                 href=url,
-                target="blank",
+                target="_blank",
                 title="Official Documentation",
             )
         ]

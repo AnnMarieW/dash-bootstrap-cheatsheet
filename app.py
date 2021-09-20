@@ -14,7 +14,7 @@ from dash import Dash, html, dcc, Input, Output, MATCH, callback_context, State
 import dash_bootstrap_components as dbc
 import json
 
-from utilities import new_items
+from utilities import new_items, dbc_home_url
 from index_examples import examples
 from content.utility_border import utility_border
 from content.utility_color import utility_color
@@ -45,16 +45,17 @@ header = html.Div(
             ),
             html.Div(
                 [
-                    html.Img(
-                        src=dbc_logo,
-                        height=125,
-                        #   className="m-2 ratio ratio-1x1"
-                        className="m-2",
+                    html.A(
+                        html.Img(src=dbc_logo, height=125, className="m-2"),
+                        href=dbc_home_url,
+                        target="_blank",
                     ),
-                    html.Img(src=bootstrap_logo, height=125, className="m-2"),
+                    html.A(
+                        html.Img(src=bootstrap_logo, height=125, className="m-2"),
+                        href="https://getbootstrap.com/docs/5.1/getting-started/introduction/",
+                        target="blank",
+                    ),
                 ],
-                #   className="mx-auto",
-                #  style={"height": 50}
             ),
             dbc.Button(
                 "Highlight New",

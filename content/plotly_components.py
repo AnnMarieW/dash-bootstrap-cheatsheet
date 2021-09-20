@@ -14,6 +14,7 @@ urls = {
     "DataTable": "https://dash.plotly.com/datatable",
     "Dash DAQ components": "https://dash.plotly.com/dash-daq",
     "Plotly Graphs": "https://plotly.com/python/",
+    "Dash Code Snippets" : "https://dash.gallery/python-docs-dash-snippets/",
     "Plotly Github": "https://github.com/plotly",
 }
 
