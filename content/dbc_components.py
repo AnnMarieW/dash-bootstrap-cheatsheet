@@ -8,7 +8,7 @@ from utilities import make_link, make_listgroup_link, dbc_url, dbc_home_url
 
 dbc_card1_urls = {
     "Migration Guide": f"{dbc_home_url}/migration-guide/",
-    "GitHub Source Code": "https://github.com/facultyai/dash-bootstrap-components",
+    "GitHub dbc Source Code": "https://github.com/facultyai/dash-bootstrap-components",
     "Version 0.13.0 Docs": "https://dash-bootstrap-components.opensource.faculty.ai/",
     "Quickstart": f"{dbc_home_url}docs/quickstart/",
     "Themes" : f"{dbc_home_url}docs/themes/",
