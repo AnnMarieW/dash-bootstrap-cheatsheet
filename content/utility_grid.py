@@ -263,6 +263,11 @@ g_dev_size_preview = dbc.Container(
     ],
     fluid=True,
 )
+
+
+# --------------------------------------------------------------------
+# Cheatsheet Card  - Header name, item name and hover info
+# --------------------------------------------------------------------
 utility_grid = dbc.Card(
     [
         dbc.CardHeader(

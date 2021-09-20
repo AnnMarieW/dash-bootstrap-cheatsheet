@@ -87,6 +87,10 @@ text_opacity_preview = html.Div(
     ]
 )
 
+
+# --------------------------------------------------------------------
+# Cheatsheet Card  - Header name, item name and hover info
+# --------------------------------------------------------------------
 utility_opacity = dbc.Card(
     [
         dbc.CardHeader(

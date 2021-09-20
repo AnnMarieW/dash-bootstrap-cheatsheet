@@ -147,6 +147,9 @@ bg_gradient_preview = html.Div(
 )
 
 
+# --------------------------------------------------------------------
+# Cheatsheet Card  - Header name, item name and hover info
+# --------------------------------------------------------------------
 utility_color = dbc.Card(
     [
         dbc.CardHeader(

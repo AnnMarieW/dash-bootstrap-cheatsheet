@@ -512,6 +512,10 @@ gap_preview = html.Div(
     className="d-grid gap-3",
 )
 
+
+# --------------------------------------------------------------------
+# Cheatsheet Card  - Header name, item name and hover info
+# --------------------------------------------------------------------
 utility_spacing = dbc.Card(
     [
         dbc.CardHeader(

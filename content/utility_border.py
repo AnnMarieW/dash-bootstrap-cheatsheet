@@ -1,7 +1,7 @@
 """
 This is the card and content of the code snippets and preview content for
 
-Utility:Border
+Utility:Border Card
 """
 
 
@@ -157,7 +157,9 @@ border_rounded_size_preview = html.Div(
     className="border-utils",
 )
 
-
+# --------------------------------------------------------------------
+# Cheatsheet Card  - Header name, item name and hover info
+# --------------------------------------------------------------------
 utility_border = dbc.Card(
     [
         dbc.CardHeader(

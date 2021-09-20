@@ -316,6 +316,9 @@ vr_preview = html.Div(
 )
 
 
+# --------------------------------------------------------------------
+# Cheatsheet Card  - Header name, item name and hover info
+# --------------------------------------------------------------------
 utility_position = dbc.Card(
     [
         dbc.CardHeader(

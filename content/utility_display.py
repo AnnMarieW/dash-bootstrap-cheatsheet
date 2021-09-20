@@ -245,6 +245,10 @@ d_print_display_preview = html.Div(
 )
 
 
+# --------------------------------------------------------------------
+# Cheatsheet Card  - Header name, item name and hover info
+# --------------------------------------------------------------------
+
 utility_display = dbc.Card(
     [
         dbc.CardHeader(

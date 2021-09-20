@@ -529,6 +529,10 @@ align_content_preview = html.Div(
     ]
 )
 
+
+# --------------------------------------------------------------------
+# Cheatsheet Card  - Header name, item name and hover info
+# --------------------------------------------------------------------
 utility_flex = dbc.Card(
     [
         dbc.CardHeader(

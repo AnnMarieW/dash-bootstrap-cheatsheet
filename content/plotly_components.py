@@ -6,7 +6,7 @@ from dash import html
 import dash_bootstrap_components as dbc
 from utilities import make_link, make_listgroup_link, dbc_url, dbc_home_url
 
-urls = {
+plotly_urls = {
     "Dash Community Forum": "https://community.plotly.com/c/dash/python/25/l/latest",
     "Dash Tutorial": "https://dash.plotly.com/",
     "Dash Core Components": "https://dash.plotly.com/dash-core-components",
@@ -27,7 +27,7 @@ plotly_links = dbc.Card(
         ),
         dbc.ListGroup(
             [dbc.ListGroupItem(html.H5("Links to the docs:"), className="border-0"),]
-            + [make_listgroup_link(title, url) for title, url in urls.items()],
+            + [make_listgroup_link(title, url) for title, url in plotly_urls.items()],
             flush=True,
             className="border-0",
         ),

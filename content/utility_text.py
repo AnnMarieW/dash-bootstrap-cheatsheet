@@ -300,6 +300,10 @@ text_decoration_preview = html.Div(
     ]
 )
 
+
+# --------------------------------------------------------------------
+# Cheatsheet Card  - Header name, item name and hover info
+# --------------------------------------------------------------------
 utility_text = dbc.Card(
     [
         dbc.CardHeader(

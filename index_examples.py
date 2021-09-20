@@ -1,10 +1,10 @@
 """
 This is the index that links the name of the item in the cheatsheet cards
 with the code and preview content for the offcanvas component.
-See the content folder for details.
+See the content folder for the details.
 """
 
-
+# I know this could be put in __init__.py but it's easier to remember to update it here when new cards are added.
 from content.utility_border import *
 from content.utility_color import *
 from content.utility_display import *

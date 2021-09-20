@@ -6,7 +6,7 @@ from dash import html
 import dash_bootstrap_components as dbc
 from utilities import make_link, make_listgroup_link, dbc_url, dbc_home_url
 
-urls1 = {
+dbc_card1_urls = {
     "Migration Guide": f"{dbc_home_url}/migration-guide/",
     "GitHub Source Code": "https://github.com/facultyai/dash-bootstrap-components",
     "Version 0.13.0 Docs": "https://dash-bootstrap-components.opensource.faculty.ai/",
@@ -28,7 +28,7 @@ urls1 = {
 }
 
 
-urls2 = {
+dbc_card2_urls = {
     "Input": f"{dbc_url}input",
     "InputGroup": f"{dbc_url}inputgroup",
     "Jumbotron": f"{dbc_url}jumbotron",
@@ -61,7 +61,7 @@ dbc_components1 = dbc.Card(
         ),
         dbc.ListGroup(
             [dbc.ListGroupItem(html.H5("Links to the docs:"), className="border-0"),]
-            + [make_listgroup_link(title, url) for title, url in urls1.items()],
+            + [make_listgroup_link(title, url) for title, url in dbc_card1_urls.items()],
             flush=True,
             className="border-0",
         ),
@@ -82,7 +82,7 @@ dbc_components2 = dbc.Card(
         ),
         dbc.ListGroup(
             [dbc.ListGroupItem(html.H5("Links to the docs:"), className="border-0"),]
-            + [make_listgroup_link(title, url) for title, url in urls2.items()],
+            + [make_listgroup_link(title, url) for title, url in dbc_card2_urls.items()],
             flush=True,
             className="border-0",
         ),
