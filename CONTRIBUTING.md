@@ -19,8 +19,10 @@ when the card item is clicked on
 as an `id` in the callbacks**
 
 
-In the `content` directory each file is one cheatsheet card:
-  - card definition: Has header name and link, list item name and list item hover info
+In the `content` directory,  each file is one cheatsheet card. A good example is the `utility_opacity.py` because it's a small file.
+
+  - The card definition is the last variable defined in the file: It has the header name and link, list item name and list item hover info
+    - example:  `make_listgroup_item("opacity-{value}", "opacity of elements"),` "opacity-{value}" shows as a list item on the card.  "opacity of elements" is the hover info
   - `snippet_name_code` is a code text string for each item - shows in the "Code Snippet" panel of the Offcanvas
   - `snippen_name_preivew` is the code snippet for each item (actual code) for the "Preview" panel of the Offcanvas
 

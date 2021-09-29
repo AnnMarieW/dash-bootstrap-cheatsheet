@@ -7,7 +7,7 @@ import dash_bootstrap_components as dbc
 dbc_home_url = "https://dbc-v1.herokuapp.com/"
 dbc_url = "https://dbc-v1.herokuapp.com/docs/components/"
 
-# These items are highlighted with the "hilight new" button
+# These items are highlighted with the "highlight new" button
 new_items = [
     "vstack",
     "hstack",
@@ -41,6 +41,7 @@ new_items = [
     "Breadcrumb",
     "Offcanvas",
     "Pagination",
+    "display-{size}"
 ]
 
 

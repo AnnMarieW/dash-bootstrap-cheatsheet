@@ -15,6 +15,7 @@ from content.utility_text import *
 from content.misc_helpers import *
 from content.utility_flex import *
 from content.utility_grid import *
+from content.typography import *
 
 
 examples = {
@@ -137,11 +138,22 @@ examples = {
     "order-*-{name}": [order_name_code, order_name_preview],
     "align-content-*-{option}": [align_content_code, align_content_preview],
     #
-    # Utilites Grid examples
+    # Utilities Grid examples
     "gx-{size}": [gx_size_code, gx_size_preview],
     "gx-*-{size}": [gx_dev_size_code, gx_dev_size_preview],
     "gy-{size}": [gy_size_code, gy_size_preview],
     "gy-*-{size}": [gy_dev_size_code, gy_dev_size_preview],
     "g-{size}": [g_size_code, g_size_preview],
     "g-*-{size}": [g_dev_size_code, g_dev_size_preview],
+    #
+    # Typography examples
+    "h1-h6": [h1h6_code, h1h6_preview],
+    "display-{size}": [display_code, display_preview],
+    "lead": [lead_code, lead_preview],
+    "mark": [mark_code, mark_preview],
+    "abbr": [abbr_code, abbr_preview],
+    "initialism": [abbr_code, abbr_preview],
+    "blockquote": [blockquote_code, blockquote_preview],
+    "blockquote-footer": [blockquote_code, blockquote_preview],
+    "cite": [cite_code, cite_preview],
 }

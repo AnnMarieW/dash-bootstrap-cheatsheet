@@ -16,6 +16,7 @@ import json
 
 from utilities import new_items, dbc_home_url
 from index_examples import examples
+
 from content.utility_border import utility_border
 from content.utility_color import utility_color
 from content.utility_display import utility_display
@@ -29,6 +30,7 @@ from content.utility_grid import utility_grid
 from content.dbc_components import dbc_components1, dbc_components2
 from content.plotly_components import plotly_links
 from content.about import about
+from content.typography import typography
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.SPACELAB, dbc.icons.BOOTSTRAP])
 app.title = "Cheatsheet"
@@ -93,6 +95,7 @@ app.layout = dbc.Container(
                 dbc.Col(utility_position),
                 dbc.Col(utility_spacing),
                 dbc.Col(utility_text),
+                dbc.Col(typography),
                 dbc.Col(misc_helpers),
                 dbc.Col(dbc_components1),
                 dbc.Col(dbc_components2),
