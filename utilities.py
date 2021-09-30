@@ -74,7 +74,8 @@ def make_offcanvas(idx):
                                         ],
                                         className="position-relative",
                                     ),
-                                ]
+                                ],
+                                width=12, lg=6
                             ),
                             dbc.Col(
                                 [
@@ -88,7 +89,7 @@ def make_offcanvas(idx):
                                             ),
                                         ]
                                     )
-                                ]
+                                ], width=12, lg=6
                             ),
                         ]
                     ),
@@ -153,7 +154,7 @@ def make_fullscreen_btn(idx):
     return dbc.Button(
         "fullscreen",
         id={"type": "button", "index": idx,},
-        outline=True,
-        color="secondary",
+       # outline=True,
+        color="primary",
         style={"position": "absolute", "top": 15, "right": 50},
     )
