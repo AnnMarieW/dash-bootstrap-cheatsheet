@@ -86,8 +86,6 @@ app.layout = dbc.Container(
         header,
         dbc.Row(
             [
-                dbc.Col(utility_grid),
-                dbc.Col(utility_flex),
                 dbc.Col(utility_border),
                 dbc.Col(utility_color),
                 dbc.Col(utility_display),
@@ -97,6 +95,8 @@ app.layout = dbc.Container(
                 dbc.Col(utility_text),
                 dbc.Col(typography),
                 dbc.Col(misc_helpers),
+                dbc.Col(utility_grid),
+                dbc.Col(utility_flex),
                 dbc.Col(dbc_components1),
                 dbc.Col(dbc_components2),
                 dbc.Col(plotly_links),
