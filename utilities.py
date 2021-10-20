@@ -3,9 +3,14 @@
 """
 from dash import html, dcc
 import dash_bootstrap_components as dbc
+#
+# dbc_home_url = "https://dbc-v1.herokuapp.com/"
+# dbc_url = "https://dbc-v1.herokuapp.com/docs/components/"
 
-dbc_home_url = "https://dbc-v1.herokuapp.com/"
-dbc_url = "https://dbc-v1.herokuapp.com/docs/components/"
+
+dbc_home_url = "https://dash-bootstrap-components.opensource.faculty.ai/"
+dbc_url = "https://dash-bootstrap-components.opensource.faculty.ai/docs/components/"
+
 
 # These items are highlighted with the "highlight new" button
 new_items = [
@@ -107,16 +112,23 @@ def make_offcanvas(idx):
 
 
 def make_listgroup_item(idx, tooltip=None):
+    #######################################################################
+    # THIS IS A TEMPORARY FIX TO REMOVE TOOLTIPS UNTIL THE HOVER IS FIXED
+    # IN DASH-BOOTSTRAP-COMPONENTS LIBRARY.  THEN DELETE THIS LINE !!!!
+    tooltip=None
+    ########################################################################
     listgroup_item = dbc.ListGroupItem(
         idx,
         id={"type": "list-item", "index": idx},
         n_clicks=0,
-        className="border-0 text-nowrap",
+        className="border-0 text-nowrap list-group-item-action",
+        style={"cursor": "pointer"}
     )
     add_tooltip = dbc.Tooltip(
         tooltip,
         id={"type": "tooltip", "index": idx},
         target={"type": "list-item", "index": idx},
+        delay={"show":0, "hide":0}
         # placement="auto-end",
     )
     if tooltip:
@@ -130,7 +142,8 @@ def make_listgroup_link(title, url):
         id={"type": "list-item", "index": title},
         href=url,
         target="_blank",
-        className="border-0",
+        className="border-0 ",
+
     )
 
 

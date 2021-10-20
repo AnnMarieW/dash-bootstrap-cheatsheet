@@ -9,7 +9,7 @@ from utilities import make_link, make_listgroup_link, dbc_url, dbc_home_url
 dbc_card1_urls = {
     "Migration Guide": f"{dbc_home_url}/migration-guide/",
     "GitHub dbc Source Code": "https://github.com/facultyai/dash-bootstrap-components",
-    "Version 0.13.0 Docs": "https://dash-bootstrap-components.opensource.faculty.ai/",
+    "Version 0.13.0 Docs": "https://dbc-v0.herokuapp.com/",
     "Quickstart": f"{dbc_home_url}docs/quickstart/",
     "Themes" : f"{dbc_home_url}docs/themes/",
     "Icons": f"{dbc_home_url}docs/icons/",
