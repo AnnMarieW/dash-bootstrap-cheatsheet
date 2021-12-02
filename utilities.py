@@ -154,7 +154,7 @@ def make_link(url):
     return html.Span(
         [
             html.A(
-                className="bi bi-box-arrow-up-right h4",
+                className="bi bi-book h4",
                 href=url,
                 target="_blank",
                 title="Official Documentation",

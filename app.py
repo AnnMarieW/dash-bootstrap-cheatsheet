@@ -48,16 +48,31 @@ header = html.Div(
             html.Div(
                 [
                     html.A(
-                        html.Img(src=dbc_logo, height=125, className="m-2"),
+                        html.Img(src=dbc_logo, height=90, className="m-2"),
                         href=dbc_home_url,
                         target="_blank",
                     ),
                     html.A(
-                        html.Img(src=bootstrap_logo, height=125, className="m-2"),
+                        html.Img(src=bootstrap_logo, height=90, className="m-2"),
                         href="https://getbootstrap.com/docs/5.1/getting-started/introduction/",
                         target="blank",
                     ),
                 ],
+            ),
+            html.Div(
+                [
+                    dbc.Button(
+                        "Go To Dash Bootstrap Theme Explorer",
+                        color="secondary",
+                        href="https://hellodash.pythonanywhere.com/",
+                        external_link=True,
+                        target="_blank",
+                        className="me-2",
+                        size="sm"
+
+                    ),
+                ],
+                className="mt-4"
             ),
             dbc.Button(
                 "Highlight New",
@@ -71,7 +86,7 @@ header = html.Div(
         className="py-3",
     ),
     className="p-3 bg-primary text-light rounded-3 mb-4  position-relative",
-    style={"height": 400},
+    style={"height": 425},
 )
 
 
