@@ -112,11 +112,6 @@ def make_offcanvas(idx):
 
 
 def make_listgroup_item(idx, tooltip=None):
-    #######################################################################
-    # THIS IS A TEMPORARY FIX TO REMOVE TOOLTIPS UNTIL THE HOVER IS FIXED
-    # IN DASH-BOOTSTRAP-COMPONENTS LIBRARY.  THEN DELETE THIS LINE !!!!
-    tooltip=None
-    ########################################################################
     listgroup_item = dbc.ListGroupItem(
         idx,
         id={"type": "list-item", "index": idx},

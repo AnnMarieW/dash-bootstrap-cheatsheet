@@ -1,2 +1,2 @@
 dash>=2.0.0
-dash-boostrap-components>=1.0.0b1
+dash-boostrap-components>=1.2
