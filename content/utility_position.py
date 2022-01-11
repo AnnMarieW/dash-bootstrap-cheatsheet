@@ -297,11 +297,11 @@ https://getbootstrap.com/docs/5.1/helpers/vertical-rule/
 ```
 vr_preview = html.Div(
     [
-        html.Div("First Item", className="bg-light border"),
-        html.Div("Second Item", className="bg-light border"),
-        html.Div("Third Item", className="bg-light border"),
+        html.Span("Second Item", className="bg-light border"),
+        html.Div(className="vr"),
+        html.Span("Third Item", className="bg-light border"),
     ],
-    className="vstack gap-3",
+    className="hstack gap-3",
 )
 
 ```"""
