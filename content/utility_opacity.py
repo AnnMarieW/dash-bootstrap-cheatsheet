@@ -51,19 +51,19 @@ bg_opacity_preview = html.Div(
         html.Div("default", className="p-2 m-1 bg-primary text-light fw-bold rounded"),
         html.Div(
             "75%",
-            className="bg_opacity-75 p-2 m-1 bg-primary text-light fw-bold rounded",
+            className="bg-opacity-75 p-2 m-1 bg-primary text-light fw-bold rounded",
         ),
         html.Div(
             "50%",
-            className="bg_opacity-50 p-2 m-1 bg-primary text-dark fw-bold rounded",
+            className="bg-opacity-50 p-2 m-1 bg-primary text-dark fw-bold rounded",
         ),
         html.Div(
             "25%",
-            className="bg_opacity-25 p-2 m-1 bg-primary text-dark fw-bold rounded",
+            className="bg-opacity-25 p-2 m-1 bg-primary text-dark fw-bold rounded",
         ),
         html.Div(
             "10%",
-            className="bg_opacity-10 p-2 m-1 bg-primary text-dark fw-bold rounded",
+            className="bg-opacity-10 p-2 m-1 bg-primary text-dark fw-bold rounded",
         ),
     ]
 )
