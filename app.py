@@ -29,7 +29,7 @@ from content.utility_flex import utility_flex
 from content.utility_grid import utility_grid
 from content.dbc_components import dbc_components1, dbc_components2
 from content.plotly_components import plotly_links
-from content.about import about
+from content.about import about, about_me, book_card
 from content.typography import typography
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.SPACELAB, dbc.icons.BOOTSTRAP])
@@ -118,6 +118,8 @@ app.layout = dbc.Container(
                 dbc.Col(about),
             ]
         ),
+        html.Hr(),
+        dbc.Row(dbc.Col([about_me, book_card], width="auto"), justify="center")
     ],
     fluid=True,
 )

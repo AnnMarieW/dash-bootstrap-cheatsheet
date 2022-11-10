@@ -7,14 +7,14 @@ import dash_bootstrap_components as dbc
 from utilities import make_link, make_listgroup_link, dbc_url, dbc_home_url
 
 plotly_urls = {
-    "Dash Community Forum": "https://community.plotly.com/c/dash/python/25/l/latest",
+    "Dash Community Forum": "https://community.plotly.com/",
+    "Dash Example Index": "https://dash-example-index.herokuapp.com/",
     "Dash Tutorial": "https://dash.plotly.com/",
     "Dash Core Components": "https://dash.plotly.com/dash-core-components",
     "Dash HTML Components": "https://dash.plotly.com/dash-html-components",
     "DataTable": "https://dash.plotly.com/datatable",
     "Dash DAQ components": "https://dash.plotly.com/dash-daq",
     "Plotly Graphs": "https://plotly.com/python/",
-    "Dash Code Snippets" : "https://dash.gallery/python-docs-dash-snippets/",
     "Plotly Github": "https://github.com/plotly",
 }
 
