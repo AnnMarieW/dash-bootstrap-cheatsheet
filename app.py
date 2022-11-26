@@ -18,8 +18,10 @@ from utilities import new_items, dbc_home_url
 from index_examples import examples
 
 from content.utility_border import utility_border
+from content.utility_background import utility_background
 from content.utility_color import utility_color
 from content.utility_display import utility_display
+from content.utility_sizing import utility_sizing
 from content.utility_spacing import utility_spacing
 from content.utility_opacity import utility_opacity
 from content.utility_position import utility_position
@@ -29,35 +31,42 @@ from content.utility_flex import utility_flex
 from content.utility_grid import utility_grid
 from content.dbc_components import dbc_components1, dbc_components2
 from content.plotly_components import plotly_links
-from content.about import about, about_me, book_card
+from content.about import about
 from content.typography import typography
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.SPACELAB, dbc.icons.BOOTSTRAP])
 app.title = "Cheatsheet"
 dbc_logo = "https://user-images.githubusercontent.com/72614349/133677816-5ea52424-bfd3-4405-9ccf-8ad0dbd18020.png"
 bootstrap_logo = "https://user-images.githubusercontent.com/72614349/133683669-eef08b42-2eff-49df-b0a5-33a7754a2b86.png"
+plotly_logo = "https://user-images.githubusercontent.com/72614349/182969599-5ae4f531-ea01-4504-ac88-ee1c962c366d.png"
+dash_url = "https://dash.plotly.com/"
 
 header = html.Div(
     dbc.Container(
         [
             html.H1("Dash Bootstrap Cheatsheet", className="display-3 text-white",),
             html.P(
-                "A guide for using Bootstrap 5 classes in Dash Bootstrap Components V1",
+                "A guide for using Bootstrap 5 utility classes in Plotly Dash Apps",
                 className="fst-italic lead",
             ),
             html.Div(
                 [
                     html.A(
-                        html.Img(src=dbc_logo, height=90, className="m-2"),
+                        html.Img(src=plotly_logo, height=80, className="me-2"),
+                        href=dash_url,
+                        target="_blank",
+                    ),
+                    html.A(
+                        html.Img(src=dbc_logo, height=80, className="me-2"),
                         href=dbc_home_url,
                         target="_blank",
                     ),
                     html.A(
-                        html.Img(src=bootstrap_logo, height=90, className="m-2"),
+                        html.Img(src=bootstrap_logo, height=80),
                         href="https://getbootstrap.com/docs/5.1/getting-started/introduction/",
                         target="blank",
                     ),
-                ],
+                ], className="text-nowrap"
             ),
             html.Div(
                 [
@@ -101,11 +110,13 @@ app.layout = dbc.Container(
         header,
         dbc.Row(
             [
+                dbc.Col(utility_background),
                 dbc.Col(utility_border),
                 dbc.Col(utility_color),
                 dbc.Col(utility_display),
                 dbc.Col(utility_opacity),
                 dbc.Col(utility_position),
+                dbc.Col(utility_sizing),
                 dbc.Col(utility_spacing),
                 dbc.Col(utility_text),
                 dbc.Col(typography),
@@ -115,11 +126,10 @@ app.layout = dbc.Container(
                 dbc.Col(dbc_components1),
                 dbc.Col(dbc_components2),
                 dbc.Col(plotly_links),
-                dbc.Col(about),
             ]
         ),
-        html.Hr(),
-        dbc.Row(dbc.Col([about_me, book_card], width="auto"), justify="center")
+
+        dbc.Row(dbc.Col(about))
     ],
     fluid=True,
 )

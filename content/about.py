@@ -6,34 +6,55 @@ This is the card for the About links
 from dash import html, dcc
 import dash_bootstrap_components as dbc
 from utilities import make_link, make_listgroup_link, dbc_url, dbc_home_url
+#
+#
+# about = dbc.Card(
+#     [
+#         dbc.CardHeader([html.H3("About"),],),
+#         dbc.ListGroup(
+#             [
+#                 dbc.ListGroupItem(
+#                     [
+#                         make_listgroup_link(
+#                             "GitHub Source Code",
+#                             "https://github.com/AnnMarieW/dash-bootstrap-cheatsheet",
+#                         )
+#                     ]
+#                 ),
+#                 dbc.ListGroupItem(
+#                     make_listgroup_link(
+#                         "See also: Dash Bootstrap Theme Explorer",
+#                         "https://hellodash.pythonanywhere.com/theme_explorer",
+#                     )
+#                 ),
+#             ],
+#             flush=True,
+#             className="border-0",
+#         ),
+#     ],
+#     className="class-card",
+# )
+
+# about_me, book_card
 
 
-about = dbc.Card(
-    [
-        dbc.CardHeader([html.H3("About"),],),
-        dbc.ListGroup(
-            [
-                dbc.ListGroupItem(
-                    [
-                        make_listgroup_link(
-                            "GitHub Source Code",
-                            "https://github.com/AnnMarieW/dash-bootstrap-cheatsheet",
-                        )
-                    ]
-                ),
-                dbc.ListGroupItem(
-                    make_listgroup_link(
-                        "See also: Dash Bootstrap Theme Explorer",
-                        "https://hellodash.pythonanywhere.com/theme_explorer",
-                    )
-                ),
-            ],
-            flush=True,
-            className="border-0",
-        ),
-    ],
-    className="class-card",
-)
+
+welcome_md = dcc.Markdown(
+    """
+### Welcome to Dash Bootstrap Cheatsheet 🤗
+
+This cheatsheet is based on the official Bootstrap documentation.  You can find more information about each category by 
+ clicking on the book icon in the category headings.   
+ 
+If you're new to Dash or Bootstrap, see:
+- The  [Plotly Dash](https://dash.plotly.com/) tutorial
+- The [Dash Boostrap Components](https://dash-bootstrap-components.opensource.faculty.ai/) documentation
+- The [Bootstrap](https://getbootstrap.com/docs/5.1/) documentation
+- For even more examples, don't miss the [Dash Bootstrap Utilities Tutorial](https://hellodash.pythonanywhere.com/adding-themes/bootstrap-utility-classes)
+on the [Dash Bootstrap Theme Explorer](https://hellodash.pythonanywhere.com/) site.
+
+Still have questions?  Try asking on the [Dash Community Forum](https://community.plotly.com/)
+""",)
 
 
 
@@ -95,7 +116,7 @@ authors = html.P(
 about_me1 = f"""
 __This site is maintained by Ann Marie Ward__  
 co-author of ["The Book of Dash"]({nostarch})  
-Questions?  Ask on the [Dash Community Forum]({forum})
+
 """
 about_me = dcc.Markdown(about_me1,
     className="mt-5 text-center small",
@@ -119,4 +140,19 @@ book_card = dbc.Card(
     ],
     className="mt-4 mb-5 small shadow p-2",
     style={"maxWidth": "32rem"},
+)
+
+about = dbc.Card(
+    [
+        dbc.CardHeader([html.H3("About")]),
+        dbc.CardBody(
+            [
+                welcome_md,
+                html.Hr(),
+                dbc.Row(dbc.Col([about_me, book_card], width="auto"), justify="center")
+            ]
+        )
+
+    ],
+    className="shadow mt-4",
 )

@@ -6,8 +6,10 @@ See the content folder for the details.
 
 # I know this could be put in __init__.py but it's easier to remember to update it here when new cards are added.
 from content.utility_border import *
+from content.utility_background import *
 from content.utility_color import *
 from content.utility_display import *
+from content.utility_sizing import *
 from content.utility_spacing import *
 from content.utility_opacity import *
 from content.utility_position import *
@@ -36,9 +38,12 @@ examples = {
     "text-muted": [text_muted_code, text_muted_preview],
     "text-black-50": [text_black_50_code, text_black_50_preview],
     "text-white-50": [text_white_50_code, text_white_50_preview],
+
+    # Utility background examples
     "bg-{color}": [bg_color_code, bg_color_preview],
     "bg-transparent": [bg_transparent_code, bg_transparent_preview],
     "bg-gradient": [bg_gradient_code, bg_gradient_preview],
+    "bg-opacity-{val}": [bg_opacity_code, bg_opacity_preview],
     #
     # Utility display examples
     "d-*-none": [d_none_code, d_none_preview],
@@ -101,17 +106,20 @@ examples = {
     "font-monospace": [font_monospace_code, font_monospace_preview],
     "text-reset": [text_reset_code, text_reset_preview],
     "text-decoration-{option}": [text_decoration_code, text_decoration_preview],
-    #
-    # Utility misc examples
-    "user-select-{option}": [user_select_code, user_select_preview],
-    "pe-{option} (pointer)": [pointer_code, pointer_preview],
-    "overflow-{option}": [overflow_code, overflow_preview],
-    "shadow-{option}": [shadow_code, shadow_preview],
+
+    # Utility sizing examples
     "w-{option}": [w_option_code, w_option_preview],
     "h-{option}": [h_option_code, h_option_preview],
     "mw-100": [mw_100_code, mw_100_preview],
     "mh-100": [mh_100_code, mh_100_preview],
     "viewport": [viewport_code, viewport_preview],
+
+    # Utility misc examples
+    "user-select-{option}": [user_select_code, user_select_preview],
+    "pe-{option} (pointer)": [pointer_code, pointer_preview],
+    "overflow-{option}": [overflow_code, overflow_preview],
+    "shadow-{option}": [shadow_code, shadow_preview],
+
     "visible/invisible": [visible_code, visible_preview],
     "fixed-top": [fixed_top_code, fixed_top_preview],
     "fixed-bottom": [fixed_bottom_code, fixed_bottom_preview],

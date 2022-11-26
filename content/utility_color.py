@@ -72,35 +72,6 @@ text_white_50_preview = html.Div(
     ]
 )
 
-
-bg_color_code = """
-```
-html.P("bg-primary", className="bg-primary")
-html.P("bg-secondary", className="bg-secondary")
-html.P("bg-success", className="bg-success")
-html.P("bg-danger", className="bg-danger")
-html.P("bg-warning", className="bg-warning")
-html.P("bg-info", className="bg-info")
-html.P("bg-light", className="bg-light")
-html.P("bg-dark", className="bg-dark")
-
-```"""
-
-
-bg_color_preview = html.Div(
-    [
-        html.P("bg-primary", className="bg-primary"),
-        html.P("bg-secondary", className="bg-secondary"),
-        html.P("bg-success", className="bg-success"),
-        html.P("bg-danger", className="bg-danger"),
-        html.P("bg-warning", className="bg-warning"),
-        html.P("bg-info", className="bg-info"),
-        html.P("bg-light", className="bg-light"),
-        html.P("bg-dark", className="bg-dark text-white"),
-    ]
-)
-
-
 text_black_50_code = """
 
 Note: Deprecated use "opacity-*" instead
@@ -113,36 +84,6 @@ text_black_50_preview = html.Div(
     [
         html.P("text-black", className="text-black bg-white"),
         html.P("text-black-50", className="text-black-50 bg-white"),
-    ]
-)
-
-
-bg_transparent_code = """
-```
-html.P("bg-transparent", className="bg-transparent")
-```"""
-
-
-bg_transparent_preview = html.Div(
-    [html.P("bg-transparent", className="bg-transparent"),]
-)
-
-
-bg_gradient_code = """
-```
-html.P("bg-primary", className="bg-primary text-white"),
-html.P("bg-primary bg-gradient", className="bg-primary bg-gradient text-white")
-```"""
-
-
-bg_gradient_preview = html.Div(
-    [
-        html.P("bg-primary", className="bg-primary text-white", style={"height": 100}),
-        html.P(
-            "bg-primary bg-gradient",
-            className="bg-primary bg-gradient text-white",
-            style={"height": 100},
-        ),
     ]
 )
 
@@ -169,12 +110,7 @@ utility_color = dbc.Card(
                 make_listgroup_item("text-muted", "Text color muted"),
                 make_listgroup_item("text-black-50", "deprecated - use opacity"),
                 make_listgroup_item("text-white-50", "deprecated - use opacity"),
-                make_listgroup_item(
-                    "bg-{color}",
-                    "background {primary|secondary|success|danger|warning|info|light|dark|white}",
-                ),
-                make_listgroup_item("bg-transparent", "background transparent"),
-                make_listgroup_item("bg-gradient", "background gradient"),
+
             ],
             flush=True,
             className="border-0",
