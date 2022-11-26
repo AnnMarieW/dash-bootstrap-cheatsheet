@@ -22,14 +22,14 @@ from content.utility_background import utility_background
 from content.utility_color import utility_color
 from content.utility_display import utility_display
 from content.utility_sizing import utility_sizing
-from content.utility_spacing import utility_spacing
+from content.utility_spacing import utility_spacing_margin, utility_spacing_padding
 from content.utility_opacity import utility_opacity
 from content.utility_position import utility_position
 from content.utility_text import utility_text
 from content.misc_helpers import misc_helpers
 from content.utility_flex import utility_flex
 from content.utility_grid import utility_grid
-from content.dbc_components import dbc_components1, dbc_components2
+from content.dbc_components import dbc_components1, dbc_components2, dbc_components3
 from content.plotly_components import plotly_links
 from content.about import about
 from content.typography import typography
@@ -117,7 +117,8 @@ app.layout = dbc.Container(
                 dbc.Col(utility_opacity),
                 dbc.Col(utility_position),
                 dbc.Col(utility_sizing),
-                dbc.Col(utility_spacing),
+                dbc.Col(utility_spacing_margin),
+                dbc.Col(utility_spacing_padding),
                 dbc.Col(utility_text),
                 dbc.Col(typography),
                 dbc.Col(misc_helpers),
@@ -125,6 +126,7 @@ app.layout = dbc.Container(
                 dbc.Col(utility_flex),
                 dbc.Col(dbc_components1),
                 dbc.Col(dbc_components2),
+                dbc.Col(dbc_components3),
                 dbc.Col(plotly_links),
             ]
         ),

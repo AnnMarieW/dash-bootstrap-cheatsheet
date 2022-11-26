@@ -22,7 +22,9 @@
 
 .class-card {
   max-width: 400px;
-  margin-bottom: 10px;
+
+  min-height: 485px;
+  margin-bottom: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.10);
 }
 

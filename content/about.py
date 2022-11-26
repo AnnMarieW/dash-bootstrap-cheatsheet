@@ -5,60 +5,9 @@ This is the card for the About links
 
 from dash import html, dcc
 import dash_bootstrap_components as dbc
-from utilities import make_link, make_listgroup_link, dbc_url, dbc_home_url
-#
-#
-# about = dbc.Card(
-#     [
-#         dbc.CardHeader([html.H3("About"),],),
-#         dbc.ListGroup(
-#             [
-#                 dbc.ListGroupItem(
-#                     [
-#                         make_listgroup_link(
-#                             "GitHub Source Code",
-#                             "https://github.com/AnnMarieW/dash-bootstrap-cheatsheet",
-#                         )
-#                     ]
-#                 ),
-#                 dbc.ListGroupItem(
-#                     make_listgroup_link(
-#                         "See also: Dash Bootstrap Theme Explorer",
-#                         "https://hellodash.pythonanywhere.com/theme_explorer",
-#                     )
-#                 ),
-#             ],
-#             flush=True,
-#             className="border-0",
-#         ),
-#     ],
-#     className="class-card",
-# )
-
-# about_me, book_card
 
 
 
-welcome_md = dcc.Markdown(
-    """
-### Welcome to Dash Bootstrap Cheatsheet 🤗
-
-This cheatsheet is based on the official Bootstrap documentation.  You can find more information about each category by 
- clicking on the book icon in the category headings.   
- 
-If you're new to Dash or Bootstrap, see:
-- The  [Plotly Dash](https://dash.plotly.com/) tutorial
-- The [Dash Boostrap Components](https://dash-bootstrap-components.opensource.faculty.ai/) documentation
-- The [Bootstrap](https://getbootstrap.com/docs/5.1/) documentation
-- For even more examples, don't miss the [Dash Bootstrap Utilities Tutorial](https://hellodash.pythonanywhere.com/adding-themes/bootstrap-utility-classes)
-on the [Dash Bootstrap Theme Explorer](https://hellodash.pythonanywhere.com/) site.
-
-Still have questions?  Try asking on the [Dash Community Forum](https://community.plotly.com/)
-""",)
-
-
-
-# footer book ad
 book_img = "https://user-images.githubusercontent.com/72614349/185497519-733bdfc3-5731-4419-9a68-44c1cad04a78.png"
 nostarch = "https://nostarch.com/book-dash"
 github = "fa-brands fa-github"
@@ -75,8 +24,28 @@ amw = "https://github.com/AnnMarieW"
 adam = "https://www.youtube.com/c/CharmingData/featured"
 chris = "https://finxter.com/"
 dbt_github = "https://github.com/AnnMarieW/dash-bootstrap-templates"
-# end footer book ad
+dbc_docs_url = "https://dash-bootstrap-components.opensource.faculty.ai/"
+bootstrap_docs_url = "https://getbootstrap.com/docs/5.1/"
 
+
+
+welcome_md = dcc.Markdown(
+    f"""
+### Welcome to Dash Bootstrap Cheatsheet 🤗
+
+This cheatsheet is based on the official Bootstrap documentation.  You can find more information about each category by 
+ clicking on the book icon in the category headings.   
+ 
+If you're new to Dash or Bootstrap, see:
+- The  [Plotly Dash]({plotly}) tutorial
+- The [Dash Boostrap Components]({dbc_docs_url}) documentation
+- The [Bootstrap]({bootstrap_docs_url}) documentation
+- Videos by [Charming Data]({adam})
+- For even more examples, don't miss the [Dash Bootstrap Utilities Tutorial](https://hellodash.pythonanywhere.com/adding-themes/bootstrap-utility-classes)
+on the [Dash Bootstrap Theme Explorer](https://hellodash.pythonanywhere.com/) site.
+
+Still have questions?  Try asking on the [Dash Community Forum](https://community.plotly.com/)
+""",)
 
 
 def make_link(text, icon, link):

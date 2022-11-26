@@ -516,11 +516,11 @@ gap_preview = html.Div(
 # --------------------------------------------------------------------
 # Cheatsheet Card  - Header name, item name and hover info
 # --------------------------------------------------------------------
-utility_spacing = dbc.Card(
+utility_spacing_margin = dbc.Card(
     [
         dbc.CardHeader(
             [
-                html.H3("Utility: Spacing"),
+                html.H3("Utility: Spacing - margin"),
                 make_link("https://getbootstrap.com/docs/5.1/utilities/spacing/"),
             ],
             className="hstack gap-4",
@@ -555,6 +555,31 @@ utility_spacing = dbc.Card(
                     "my-*-{option}",
                     "margin vertical with breakpoints and size: m-{xs|sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}",
                 ),
+
+                make_listgroup_item(
+                    "gap-*-{size}",
+                    "gap all sides with breakpoints and size: m-{xs|sm|md|lg|xl|xxl}-{0|1|2|3|4|5}",
+                ),
+            ],
+            flush=True,
+            className="border-0",
+        ),
+    ],
+    className="class-card",
+)
+
+utility_spacing_padding = dbc.Card(
+    [
+        dbc.CardHeader(
+            [
+                html.H3("Utility: Spacing - padding"),
+                make_link("https://getbootstrap.com/docs/5.1/utilities/spacing/"),
+            ],
+            className="hstack gap-4",
+        ),
+        dbc.ListGroup(
+            [
+
                 make_listgroup_item(
                     "p-*-{option}",
                     "padding all sides with breakpoints and size: m-{xs|sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}",
@@ -584,7 +609,7 @@ utility_spacing = dbc.Card(
                     "padding vertical with breakpoints and size: m-{xs|sm|md|lg|xl|xxl}-{0|1|2|3|4|5|auto}",
                 ),
                 make_listgroup_item(
-                    "gap-*-{size}",
+                    "gap-*-{sz}",
                     "gap all sides with breakpoints and size: m-{xs|sm|md|lg|xl|xxl}-{0|1|2|3|4|5}",
                 ),
             ],
@@ -594,3 +619,4 @@ utility_spacing = dbc.Card(
     ],
     className="class-card",
 )
+

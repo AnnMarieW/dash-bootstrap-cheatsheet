@@ -71,6 +71,7 @@ examples = {
     "px-*-{option}": [px_code, px_preview],
     "py-*-{option}": [py_code, py_preview],
     "gap-*-{size}": [gap_code, gap_preview],
+    "gap-*-{sz}": [gap_code, gap_preview],
     #
     # Utility opacity examples
     "text-opacity-{value}": [text_opacity_code, text_opacity_preview],
