@@ -16,7 +16,7 @@ from content.utility_position import *
 from content.utility_text import *
 from content.misc_helpers import *
 from content.utility_flex import *
-from content.utility_grid import *
+from content.utility_gutter import *
 from content.typography import *
 
 

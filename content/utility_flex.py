@@ -6,7 +6,7 @@ Utility:Flex
 
 from dash import html, dcc
 import dash_bootstrap_components as dbc
-from utilities import make_link, make_listgroup_item
+from utilities import make_link, make_listgroup_item, dbc_url
 
 
 flex_row_code = """
@@ -545,7 +545,7 @@ utility_flex = dbc.Card(
         dbc.ListGroup(
             [
                 dcc.Markdown(
-                    f"See [CSS Tricks flexbox guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background) for background, terminology, and guidelines",
+                    f"See also the *dash-bootstrap-components* [Layout section]({dbc_url}/layout/)",
                     className="p-2",
                 ),
                 # make_listgroup_item("flex-*-row"),

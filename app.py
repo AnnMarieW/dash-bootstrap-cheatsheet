@@ -28,7 +28,7 @@ from content.utility_position import utility_position
 from content.utility_text import utility_text
 from content.misc_helpers import misc_helpers
 from content.utility_flex import utility_flex
-from content.utility_grid import utility_grid
+from content.utility_gutter import utility_gutter
 from content.dbc_components import dbc_components1, dbc_components2, dbc_components3
 from content.plotly_components import plotly_links
 from content.about import about, book
@@ -114,6 +114,7 @@ app.layout = dbc.Container(
                 dbc.Col(utility_border),
                 dbc.Col(utility_color),
                 dbc.Col(utility_display),
+                dbc.Col(utility_gutter),
                 dbc.Col(utility_opacity),
                 dbc.Col(utility_position),
                 dbc.Col(utility_sizing),
@@ -122,7 +123,6 @@ app.layout = dbc.Container(
                 dbc.Col(utility_text),
                 dbc.Col(typography),
                 dbc.Col(misc_helpers),
-                dbc.Col(utility_grid),
                 dbc.Col(utility_flex),
                 dbc.Col(dbc_components1),
                 dbc.Col(dbc_components2),

@@ -34,15 +34,16 @@ welcome_md = dcc.Markdown(
 ### Welcome to Dash Bootstrap Cheatsheet 🤗
 
 This cheatsheet is based on the official Bootstrap documentation.  You can find more information about each category by 
- clicking on the book icon in the category headings.   
+ clicking on the book icon in the category headings.   For even more examples, don't miss 
+ the [Dash Bootstrap Utilities Tutorial](https://hellodash.pythonanywhere.com/adding-themes/bootstrap-utility-classes) 
+on the [Dash Bootstrap Theme Explorer](https://hellodash.pythonanywhere.com/) site.
+
  
 If you're new to Dash or Bootstrap, see:
 - The  [Plotly Dash]({plotly}) tutorial
 - The [Dash Boostrap Components]({dbc_docs_url}) documentation
 - The [Bootstrap]({bootstrap_docs_url}) documentation
 - Videos by [Charming Data]({adam})
-- For even more examples, don't miss the [Dash Bootstrap Utilities Tutorial](https://hellodash.pythonanywhere.com/adding-themes/bootstrap-utility-classes)
-on the [Dash Bootstrap Theme Explorer](https://hellodash.pythonanywhere.com/) site.
 
 Still have questions?  Try asking on the [Dash Community Forum](https://community.plotly.com/)
 """,)

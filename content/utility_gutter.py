@@ -6,7 +6,7 @@ Utility:Grid
 
 from dash import html, dcc
 import dash_bootstrap_components as dbc
-from utilities import make_link, make_listgroup_item, dbc_url
+from utilities import make_link, make_listgroup_item
 
 
 def make_row(example_class_name):
@@ -21,6 +21,8 @@ def make_row(example_class_name):
 
 
 gx_size_code = """
+
+Gutters are the padding between  columns.
 
 Note: To help show the spacing:     
 - The `Container` has `className="bg-secondary"`   
@@ -68,6 +70,8 @@ gx_size_preview = dbc.Container(
 )
 
 gy_size_code = """
+
+Gutters are the padding between  columns.
 Note: To help show the spacing:     
 - The `Container` has `className="bg-secondary"`   
 - Each `Row` also has `className=" my-2 border border-danger"`   
@@ -114,6 +118,8 @@ gy_size_preview = dbc.Container(
 )
 
 g_size_code = """
+
+Gutters are the padding between  columns.
 Note: To help show the spacing:     
 - The `Container` has `className="bg-secondary"`   
 - Each `Row` also has `className=" my-2 border border-danger"`   
@@ -162,6 +168,7 @@ g_size_preview = dbc.Container(
 
 gx_dev_size_code = """
 
+Gutters are the padding between  columns.
 Make responsive layouts by setting different gutters at breakpoints for device or viewport sizes:     
 gx-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5} 
 ```
@@ -197,6 +204,7 @@ gx_dev_size_preview = dbc.Container(
 
 gy_dev_size_code = """
 
+Gutters are the padding between  columns.
 Make responsive layouts by setting different gutters at breakpoints for device or viewport sizes:  
 gy-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5} 
 ```
@@ -232,6 +240,7 @@ gy_dev_size_preview = dbc.Container(
 
 g_dev_size_code = """
 
+Gutters are the padding between  columns.
 Make responsive layouts by setting different gutters at breakpoints for device or viewport sizes:  
 g-{sm|md|lg|xl|xxl}-{0|1|2|3|4|5} 
 ```
@@ -268,21 +277,17 @@ g_dev_size_preview = dbc.Container(
 # --------------------------------------------------------------------
 # Cheatsheet Card  - Header name, item name and hover info
 # --------------------------------------------------------------------
-utility_grid = dbc.Card(
+utility_gutter = dbc.Card(
     [
         dbc.CardHeader(
             [
-                html.H3("Utility: Grid"),
+                html.H3("Utility: Gutter"),
                 make_link("https://getbootstrap.com/docs/5.1/layout/gutters/"),
             ],
             className="hstack gap-4",
         ),
         dbc.ListGroup(
             [
-                dcc.Markdown(
-                    f"For Grid components see the *dash-bootstrap-components* [Layout section]({dbc_url}/layout/)",
-                    className="p-2",
-                ),
                 make_listgroup_item("gx-{size}", "Gutter horizontal"),
                 make_listgroup_item("gx-*-{size}", "Gutter horizontal w breakpoints"),
                 make_listgroup_item("gy-{size}", "Gutter vertical"),
