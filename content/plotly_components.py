@@ -32,5 +32,5 @@ plotly_links = dbc.Card(
             className="border-0",
         ),
     ],
-    className="class-card",
+    className="class-card-tall",
 )

@@ -520,7 +520,7 @@ utility_spacing_margin = dbc.Card(
     [
         dbc.CardHeader(
             [
-                html.H3("Utility: Spacing - margin"),
+                html.H3("Utility: Spacing margin"),
                 make_link("https://getbootstrap.com/docs/5.1/utilities/spacing/"),
             ],
             className="hstack gap-4",
@@ -572,7 +572,7 @@ utility_spacing_padding = dbc.Card(
     [
         dbc.CardHeader(
             [
-                html.H3("Utility: Spacing - padding"),
+                html.H3("Utility: Spacing padding"),
                 make_link("https://getbootstrap.com/docs/5.1/utilities/spacing/"),
             ],
             className="hstack gap-4",

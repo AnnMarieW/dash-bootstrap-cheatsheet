@@ -114,14 +114,15 @@ book_card = dbc.Card(
 about = dbc.Card(
     [
         dbc.CardHeader([html.H3("About")]),
-        dbc.CardBody(
-            [
-                welcome_md,
-                html.Hr(),
-                dbc.Row(dbc.Col([about_me, book_card], width="auto"), justify="center")
-            ]
-        )
-
+        dbc.CardBody(welcome_md)
     ],
-    className="shadow mt-4",
+    className="shadow m-5",
+)
+
+book = html.Div(
+    [
+        html.Hr(),
+        dbc.Row(dbc.Col([about_me, book_card], width="auto"), justify="center")
+
+    ]
 )

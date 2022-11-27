@@ -22,8 +22,15 @@
 
 .class-card {
   max-width: 400px;
+  min-height: 490px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.10);
+}
 
-  min-height: 485px;
+
+.class-card-tall {
+  max-width: 400px;
+  min-height: 690px;
   margin-bottom: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.10);
 }

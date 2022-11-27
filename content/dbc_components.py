@@ -71,7 +71,7 @@ dbc_components1 = dbc.Card(
             className="border-0",
         ),
     ],
-    className="class-card",
+    className="class-card-tall",
 )
 
 
@@ -92,7 +92,7 @@ dbc_components2 = dbc.Card(
             className="border-0",
         ),
     ],
-    className="class-card",
+    className="class-card-tall",
 )
 
 
@@ -113,6 +113,6 @@ dbc_components3 = dbc.Card(
             className="border-0",
         ),
     ],
-    className="class-card",
+    className="class-card-tall",
 )
 
