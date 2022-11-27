@@ -26,6 +26,8 @@ chris = "https://finxter.com/"
 dbt_github = "https://github.com/AnnMarieW/dash-bootstrap-templates"
 dbc_docs_url = "https://dash-bootstrap-components.opensource.faculty.ai/"
 bootstrap_docs_url = "https://getbootstrap.com/docs/5.1/"
+utility_classes_tutorial = "https://hellodash.pythonanywhere.com/adding-themes/bootstrap-utility-classes"
+theme_explorer_url = "https://hellodash.pythonanywhere.com/"
 
 
 
@@ -35,8 +37,8 @@ welcome_md = dcc.Markdown(
 
 This cheatsheet is based on the official Bootstrap documentation.  You can find more information about each category by 
  clicking on the book icon in the category headings.   For even more examples, don't miss 
- the [Dash Bootstrap Utilities Tutorial](https://hellodash.pythonanywhere.com/adding-themes/bootstrap-utility-classes) 
-on the [Dash Bootstrap Theme Explorer](https://hellodash.pythonanywhere.com/) site.
+ the [Dash Bootstrap Utilities Tutorial]({utility_classes_tutorial}) 
+on the [Dash Bootstrap Theme Explorer]({theme_explorer_url}) site.
 
  
 If you're new to Dash or Bootstrap, see:
@@ -45,8 +47,35 @@ If you're new to Dash or Bootstrap, see:
 - The [Bootstrap]({bootstrap_docs_url}) documentation
 - Videos by [Charming Data]({adam})
 
-Still have questions?  Try asking on the [Dash Community Forum](https://community.plotly.com/)
+Still have questions?  Try asking on the [Dash Community Forum]({forum})
 """,)
+
+
+quickstart = dcc.Markdown("""
+#### Quickstart - Bootstrap utility classes
+Bootstrap includes dozens of utility classes for showing, hiding, aligning, spacing and styling content. 
+
+Bootstrap utility classes can be applied to any Dash component to quickly style them without the need to write custom CSS rules. Just add them to the Dash component’s `className` prop.
+
+For example, instead of using CSS in the `style` prop:
+```
+style={
+    "backgroundColor": "blue",
+    "padding": 16,
+    "marginTop": 32,
+    "textAlign": "center",
+    "fontSize": 32,
+}
+```
+You can use  Bootstrap utilities in the `className` prop:
+```
+className="bg-primary p-1 mt-2 text-center h2",
+```
+""")
+
+
+
+
 
 
 def make_link(text, icon, link):
@@ -115,7 +144,7 @@ book_card = dbc.Card(
 about = dbc.Card(
     [
         dbc.CardHeader([html.H3("About")]),
-        dbc.CardBody(welcome_md)
+        dbc.CardBody([welcome_md, quickstart])
     ],
     className="shadow m-5",
 )
